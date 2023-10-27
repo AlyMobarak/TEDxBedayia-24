@@ -1,7 +1,9 @@
-import Image from 'next/image'
-
 export default function Home() {
   return (
-    <h1>Initial Commit</h1>
+    <article className="prose">
+      <h1>Initial Commit</h1>
+
+      <p>Welcome to this page! If you've made it here, well done!</p>
+    </article>
   )
 }
