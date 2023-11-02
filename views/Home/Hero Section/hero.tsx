@@ -1,5 +1,3 @@
-import Image from 'next/image' // use instead of <img>
-
 export default function HeroSection() {
   return (
     <center><article id="hero-section" className="prose w-screen flex flex-col items-center mt-10">
