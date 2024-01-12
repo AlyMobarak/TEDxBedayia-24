@@ -12,7 +12,7 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#8D2547"></meta>
         <meta name="author" content="Aly Mobarak" />
-        <meta name="description” content= “Spotify is all the music you’ll ever need. … Skip to content. Spotify. Listening is everything. Millions of songs and podcasts. No credit card needed." />
+        <meta name="description” content= “Spotify is all the music you'll ever need. … Skip to content. Spotify. Listening is everything. Millions of songs and podcasts. No credit card needed." />
 
         <meta property="og:image" content="branding.png"></meta>
         <meta property="og:description" content="This is the official website for 
