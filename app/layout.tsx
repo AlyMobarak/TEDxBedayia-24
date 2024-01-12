@@ -22,7 +22,7 @@ export default function RootLayout({
         the TEDxYouth event hosted at Bedayia International School. 
         Stop by to book your tickets, know more about us, and have some fun! 
         Waiting for you!"></meta>
-        <meta property="og:title" content="TEDxYouth@BedayiaSchool'24 Event"></meta>
+        <meta property="og:title" content="TEDxYouth@BedayiaSchool&apos;24 Event"></meta>
         <meta property="og:type" content="website"></meta>
 
         <title>TEDxYouth@BedayiaSchool'24</title>
