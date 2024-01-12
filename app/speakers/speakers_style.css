@@ -1,0 +1,81 @@
+body {
+    background-color: #110D24;
+}
+
+#speakers-title {
+    font-size: 64px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    margin-bottom: 42px;
+    margin-top: 42px;
+}
+
+.speakerCards {
+    background-color: #B5305B;
+    color: white;
+    width: 536px;
+    height: 216px;
+    border-radius: 16px;
+    border-style: solid;
+    border-color: #B5305B;
+    margin-bottom: 48px;
+}
+
+.speaker-name {
+    font-size: 32px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.speech-title {
+    color: #DEDEDE;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.speaker-description {
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+    padding-top: 8px;
+}
+
+.speaker-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 16px;
+    padding: 8px;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-content {
+    padding: 8px;
+}
+
+#speakers-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#speakers-container1 {
+    display: flex;
+    flex-direction: column;
+    margin-right: 96px;
+}
+
+#speakers-container2 {
+    display: flex;
+    flex-direction: column;
+}
+  
