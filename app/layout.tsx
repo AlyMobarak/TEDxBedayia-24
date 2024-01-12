@@ -25,7 +25,7 @@ export default function RootLayout({
         <meta property="og:title" content="TEDxYouth@BedayiaSchool&apos;24 Event"></meta>
         <meta property="og:type" content="website"></meta>
 
-        <title>TEDxYouth@BedayiaSchool'24</title>
+        <title>TEDxYouth@BedayiaSchool&apos;24</title>
       </head>
       <body>{children}</body>
     </html>
