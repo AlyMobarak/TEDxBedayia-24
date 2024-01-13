@@ -19,6 +19,21 @@
                 text-align: center;
                 align-items: center;
             }
+            .speaker-nametag-div {
+                width: 536px;
+                height: 96px;
+                display: flex;
+                text-align: left;
+                justify-content: left;
+            }
+            .timetable-timing-div{
+                width: 260px;
+                height: 96px;
+                display: flex;
+                text-align: center;
+                justify-content: center;
+            }
+
             @font-face {
                 font-family: Title;
                 src: url(fonts/Poppins-Bold.ttf);
@@ -35,7 +50,7 @@
     </head>
     <body style = "background-color: #100d26;">
         <center><h1 style = "font-size:48px; color: white; font-family: Title;">Event Timetable</h1></center>
-        <div class = "center" style = "flex-direction: row; display: flex;">
+                <div class = "center" style = "flex-direction: row; display: flex; padding-top: 32px;">
                             <div height = "4" width = "444" style = "background-color: transparent; border: 0;"><br>
                                 <b>
                                     <svg align = "center" width = "444" height = "20">
@@ -56,44 +71,46 @@
                                     <rect width = "444" height = "4"></rect>
                                 </svg></b>
                             </div>
-        </div>
-        <div class = "center" style = "flex-direction: row; display: flex;">
-                <div height = "96" width = "536" style = "font-size: 40px; color: white; font-family: Subheading;">
-                    
-                    <b>Speaker 1</b>
+                </div>
+        <div class = "center" style = "flex-direction: row; display: flex; padding-top: 32px;">
+                <div class = "speaker-nametag-div" style = "font-size: 40px; color: white; font-family: Subheading; background-color: #584cb0; border-radius: 16px;">
+                    <b style = "width: 64px; height: 64px; margin-top: 16px; margin-left: 20px;"><img src="images/User_alt_light.svg"></b>
+                    <b style = "margin-top: 25px; margin-left: 12px;">Speaker 1</b>
                 </div>
                 <div height = "17" width = "108" style = "background-color: transparent; border: 0;">
                     <b>
                         <img src = "images/line separator.svg">
                     </b>
                 </div>
-                <div height = "96" width = "260" style = "font-size: 40px; color: white; font-family: Subheading;">
-                    <b>5:30 - 5:30</b>
+                <div class = "timetable-timing-div" style = "font-size: 40px; color: white; font-family: Subheading; background-color: #584cb0; border-radius: 16px">
+                    <b style = "margin-top: 25px">5:30 - 5:30</b>
                 </div>
         </div>
-        <div class = "center" style = "flex-direction: row; display: flex;">
-                <div height = "96" width = "536" style = "font-size: 40px; color: white; font-family: Subheading;">
-                <b>Speaker 2</b>
+        <div class = "center" style = "flex-direction: row; display: flex; padding-top: 32px;">
+                <div class = "speaker-nametag-div" style = "font-size: 40px; color: white; font-family: Subheading; background-color: #584cb0; border-radius: 16px;">
+                    <b style = "width: 64px; height: 64px; margin-top: 16px; margin-left: 20px;"><img src="images/User_alt_light.svg"></b>
+                    <b style = "margin-top: 25px; margin-left: 12px;">Speaker 2</b>
                 </div>
                 <div height = "17" width = "108" style = "background-color: transparent; border: 0;">
                     <img src = "images/line separator 2.svg">
                 </div>
-                <div height = "96" width = "260" style = "font-size: 40px; color: white; font-family: Subheading;">
-                    <b>5:30 - 5:30</b>
+                <div class = "timetable-timing-div" style = "font-size: 40px; color: white; font-family: Subheading; background-color: #584cb0; border-radius: 16px;">
+                    <b style = "margin-top: 25px">5:30 - 5:30</b>
                 </div>
         </div>
-        <div class = "center" style = "flex-direction: row; display: flex;">
-            <div height = "96" width = "536" style = "font-size: 40px; color: white; font-family: Subheading;"> 
-                <b>Speaker 3</b>
+        <div class = "center" style = "flex-direction: row; display: flex; padding-top: 32px;">
+            <div class="speaker-nametag-div" style = "font-size: 40px; color: white; font-family: Subheading; background-color: #584cb0; border-radius: 16px;"> 
+                <b style = "width: 64px; height: 64px; margin-top: 16px; margin-left: 20px;"><img src="images/User_alt_light.svg"></b>
+                <b style = "margin-top: 25px; margin-left: 12px;">Speaker 3</b>
             </div>
             <div height = "17" width = "108" style = "background-color: transparent; border: 0;">
                     <img src = "images/line separator 3.svg">
             </div>
-            <div height = "96" width = "260" style = "font-size: 40px; color: white; font-family: Subheading;">
-                    <b>5:30 - 5:30</b>
+            <div class = "timetable-timing-div" style = "font-size: 40px; color: white; font-family: Subheading; background-color: #584cb0; border-radius: 16px;">
+                    <b style = "margin-top: 25px;">5:30 - 5:30</b>
             </div>
         </div>
-        <div class = "center" style = "flex-direction: row; display: flex;">
+        <div class = "center" style = "flex-direction: row; display: flex; padding-top: 32px;">
             <div height = "4" width = "444" style = "background-color: transparent; border: 0;"><br>
                 <b>
                     <svg align = "center" width = "444" height = "20">
@@ -115,43 +132,45 @@
                 </svg></b>
             </div>
         </div>
-        <div class = "center" style = "flex-direction: row; display: flex;">
-            <div height = "96" width = "536" style = "font-size: 40px; color: white; font-family: Subheading;">
-                    
-                <b>Speaker 1</b>
+        <div class = "center" style = "flex-direction: row; display: flex; padding-top: 32px;">
+            <div class = "speaker-nametag-div" style = "font-size: 40px; color: white; font-family: Subheading; background-color: #584cb0; border-radius: 16px;">
+                <b style = "width: 64px; height: 64px; margin-top: 16px; margin-left: 20px;"><img src="images/User_alt_light.svg"></b>
+                <b style = "margin-top: 25px; margin-left: 12px;">Speaker 1</b>
             </div>
             <div height = "17" width = "108" style = "background-color: transparent; border: 0;">
                 <b>
                     <img src = "images/line separator.svg">
                 </b>
             </div>
-            <div height = "96" width = "260" style = "font-size: 40px; color: white; font-family: Subheading;">
-                <b>5:30 - 5:30</b>
+            <div class = "timetable-timing-div" style = "font-size: 40px; color: white; font-family: Subheading; background-color: #584cb0; border-radius: 16px">
+                <b style = "margin-top: 25px">5:30 - 5:30</b>
             </div>
-        </div>
-        <div class = "center" style = "flex-direction: row; display: flex;">
-            <div height = "96" width = "536" style = "font-size: 40px; color: white; font-family: Subheading;">
-            <b>Speaker 2</b>
+    </div>
+    <div class = "center" style = "flex-direction: row; display: flex; padding-top: 32px;">
+            <div class = "speaker-nametag-div" style = "font-size: 40px; color: white; font-family: Subheading; background-color: #584cb0; border-radius: 16px;">
+                <b style = "width: 64px; height: 64px; margin-top: 16px; margin-left: 20px;"><img src="images/User_alt_light.svg"></b>
+                <b style = "margin-top: 25px; margin-left: 12px;">Speaker 2</b>
             </div>
             <div height = "17" width = "108" style = "background-color: transparent; border: 0;">
                 <img src = "images/line separator 2.svg">
             </div>
-            <div height = "96" width = "260" style = "font-size: 40px; color: white; font-family: Subheading;">
-                <b>5:30 - 5:30</b>
+            <div class = "timetable-timing-div" style = "font-size: 40px; color: white; font-family: Subheading; background-color: #584cb0; border-radius: 16px;">
+                <b style = "margin-top: 25px">5:30 - 5:30</b>
             </div>
+    </div>
+    <div class = "center" style = "flex-direction: row; display: flex; padding-top: 32px;">
+        <div class="speaker-nametag-div" style = "font-size: 40px; color: white; font-family: Subheading; background-color: #584cb0; border-radius: 16px;"> 
+            <b style = "width: 64px; height: 64px; margin-top: 16px; margin-left: 20px;"><img src="images/User_alt_light.svg"></b>
+            <b style = "margin-top: 25px; margin-left: 12px;">Speaker 3</b>
         </div>
-        <div class = "center" style = "flex-direction: row; display: flex;">
-            <div height = "96" width = "536" style = "font-size: 40px; color: white; font-family: Subheading;"> 
-                <b>Speaker 3</b>
-            </div>
-            <div height = "17" width = "108" style = "background-color: transparent; border: 0;">
-                    <img src = "images/line separator 3.svg">
-            </div>
-            <div height = "96" width = "260" style = "font-size: 40px; color: white; font-family: Subheading;">
-                    <b>5:30 - 5:30</b>
-            </div>
+        <div height = "17" width = "108" style = "background-color: transparent; border: 0;">
+                <img src = "images/line separator 3.svg">
         </div>
-        <div class = "center" style = "flex-direction: row; display: flex;">
+        <div class = "timetable-timing-div" style = "font-size: 40px; color: white; font-family: Subheading; background-color: #584cb0; border-radius: 16px;">
+                <b style = "margin-top: 25px;">5:30 - 5:30</b>
+        </div>
+    </div>
+        <div class = "center" style = "flex-direction: row; display: flex; padding-top: 32px;">
             <div height = "4" width = "444" style = "background-color: transparent; border: 0;"><br>
                 <b>
                     <svg align = "center" width = "444" height = "20">
