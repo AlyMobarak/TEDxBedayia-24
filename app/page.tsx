@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <center>
       <section className="prose w-screen flex flex-col items-center mt-10">
-        <h1 className="m-0 font-body">Initial Commit</h1>
+        <h1 className="m-0 text-primary">Initial Commit</h1>
 
         <p>Welcome to this page! Well done for making it here!</p>
       </section>
