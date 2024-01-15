@@ -2,7 +2,7 @@ export default function Navigation() {
   return (
     <center className="w-screen fixed top-0 backdrop-blur-[5px]" style={{background: "rgba(16, 13, 38, 0.10)"}}>
       <section id="nav" className="flex flex-row items-center justify-between max-w-[1088px] min-w-[1088px] h-[5.5rem]">
-        <img className="h-9 w-[448px]" src="./" alt="Event's Logo" />
+        <img className="h-9 w-[448px]" src="/Nav Bar/main-logo.png" alt="Event's Logo" />
 
         {/* Links */}
         <div className="flex flex-row justify-between gap-6 font-body items-center">
