@@ -16,6 +16,15 @@ export default function HeroSection() {
           <h4 className="mt-[7rem] min-[1520px]:mt-[9rem] min-[1600px]:mt-[12rem] min-[1720px]:mt-[15rem] min-[1850px]:mt-[18rem] font-title text-center max-w-[34rem]">Speakers, Activities,<br /> and More Coming Out Soon!! Await us!</h4>
         </div>
       </section>
+      
+      <section id="testimonials" className="flex flex-row gap-4 overflow-hidden w-screen">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </section>
     </center>
   )
 }
