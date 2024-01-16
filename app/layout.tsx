@@ -21,7 +21,7 @@ export default function RootLayout({
         Stop by to book your tickets, know more about us, and have some fun! 
         Waiting for you!"></meta>
 
-        <meta property="og:image" content="branding.png"></meta>
+        <meta property="og:image" content="/logo.png"></meta>
         <meta property="og:description" content="This is the official website for 
         the TEDxYouth event hosted at Bedayia International School. 
         Stop by to book your tickets, know more about us, and have some fun! 
