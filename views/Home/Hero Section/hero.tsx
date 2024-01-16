@@ -1,6 +1,7 @@
 export default function HeroSection() {
   return (
     <center>
+      {/* 1200px Nav Bar needs to be condensed a bit and font further lowered. 1350px font lowers and nav bar stays same. */}
       <section id="hero" className="w-screen pt-[6.75rem] pb-[4.5rem]" style={{background: "url(\"/Hero Section/hero-image.png\") no-repeat top center", backgroundSize: "100vw"}}>
         <div>
           <img className="w-[45rem]" src="/Hero Section/main-heading.png" alt="Main Header" />
@@ -13,7 +14,7 @@ export default function HeroSection() {
 
           <p className="mt-2 text-center text-text-gray-dark font-body">Await the Wonders! Join 400+ attendees.</p>
 
-          <h4 className="mt-[7rem] min-[1520px]:mt-[9rem] min-[1600px]:mt-[12rem] min-[1720px]:mt-[15rem] min-[1850px]:mt-[18rem] font-title text-center max-w-[34rem]">Speakers, Activities,<br /> and More Coming Out Soon!! Await us!</h4>
+          <h4 className="mt-[7rem] min-[1520px]:mt-[9rem] min-[1600px]:mt-[12rem] min-[1720px]:mt-[15rem] min-[1850px]:mt-[18rem] font-title text-center max-w-[36rem]">Speakers, <br />Activities, and More Coming Out Soon!! Await us!</h4>
         </div>
       </section>
       
