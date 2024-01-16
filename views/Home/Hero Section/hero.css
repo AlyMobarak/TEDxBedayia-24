@@ -1,0 +1,14 @@
+@keyframes slideVertically {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-236rem);
+  }
+
+  /* 700 seconds */
+}
+
+#testimonials > div {
+  animation: slideVertically 80s linear 0s infinite alternate-reverse;
+}
