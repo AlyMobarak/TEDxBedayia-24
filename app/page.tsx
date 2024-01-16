@@ -4,7 +4,7 @@ import Image from 'next/image' // use instead of <img>
 
 export default function Home() {
   return (
-    <center>
+    <center className='wrapper'>
       <Navigation />
       
       <HeroSection />
