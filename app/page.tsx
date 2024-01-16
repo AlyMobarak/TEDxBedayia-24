@@ -9,8 +9,6 @@ export default function Home() {
       
       <HeroSection />
 
-      <p className='mt-[90rem]'>Lol</p>
-
     </center>
   )
 }
