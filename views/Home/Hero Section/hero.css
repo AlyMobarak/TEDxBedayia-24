@@ -12,3 +12,16 @@
 #testimonials > div {
   animation: slideVertically 80s linear 0s infinite alternate-reverse;
 }
+
+#hero button {
+  transition:
+    transform ease-in 300ms,
+    box-shadow ease-in 300ms,
+    border ease-in 300ms;
+}
+
+#hero .primary:hover {
+  box-shadow:
+    0 19px 38px rgba(141, 37, 71, 0.25),
+    0 15px 12px rgba(141, 37, 71, 0.22);
+}
