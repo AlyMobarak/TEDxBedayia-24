@@ -36,8 +36,8 @@ export default function HeroSection() {
           <p className="text-text-gray-light text-center font-body w-[33.5rem]">Buckle up for a journey of inspiration and innovation at TEDx! Immerse yourself in a day filled with thought-provoking conversations, extraordinary performances, and enlightening experiences. Join us as we explore ideas worth spreading. Prepare to connect to a kaleidoscope of minds like your own &ndash; curious & hungry for change. </p>
 
           <div className="mt-6 flex gap-4 flex-row items-center justify-center">
-            <button className="py-6 justify-center text-center items-center shrink-0 w-[16.25rem] font-button bg-primary rounded-2xl">Book a Ticket</button>
-            <button className="py-5 justify-center text-center items-center shrink-0 w-[16.25rem] font-button rounded-2xl bg-transparent border-4 border-solid border-secondary-400">Book a Group Ticket</button>
+            <button className="primary py-6 justify-center text-center items-center shrink-0 w-[16.25rem] font-button bg-primary rounded-2xl hover:-translate-y-2 hover:bg-primary-600 active:bg-primary-700">Book a Ticket</button>
+            <button className="py-5 justify-center text-center items-center shrink-0 w-[16.25rem] font-button rounded-2xl bg-transparent border-4 border-solid border-secondary-400 hover:-translate-y-2 hover:border-secondary">Book a Group Ticket</button>
           </div>
 
           <p className="mt-2 text-center text-text-gray-dark font-body">Await the Wonders!</p>

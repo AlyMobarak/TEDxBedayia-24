@@ -15,7 +15,7 @@ export default function Navigation() {
         </div>
 
         {/* Book a Ticket */}
-        <button className="bg-primary flex flex-row items-center py-2 px-6 gap-2" style={{borderRadius: "0.5rem"}}>
+        <button className="bg-primary active:bg-primary-700 hover:bg-primary-600 transition-all flex flex-row items-center py-2 px-6 gap-2" style={{borderRadius: "0.5rem"}}>
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
             <path d="M10 14H7" stroke="white" strokeWidth="2" strokeLinecap="round"/>
             <path d="M13 17H7" stroke="white" strokeWidth="2" strokeLinecap="round"/>
