@@ -57,6 +57,7 @@ const config: Config = {
       },
       fontFamily: {
         body: 'Ubuntu, sans-serif',
+        small: 'Ubuntu, sans-serif',
         button: 'Bungee, sans-serif',
         title: 'Poppins, sans-serif',
       },
