@@ -38,13 +38,13 @@ export default function HeroSection() {
           <p className="text-text-gray-light text-center font-body w-[33.5rem] max-phone:w-[90vw]">Buckle up for a journey of inspiration and innovation at TEDx! Immerse yourself in a day filled with thought-provoking conversations, extraordinary performances, and enlightening experiences. Join us as we explore ideas worth spreading. Prepare to connect to a kaleidoscope of minds like your own &ndash; curious & hungry for change. </p>
 
           <div className="mt-6 max-phone:mt-[1.125rem] flex gap-4 max-phone:gap-3 flex-row max-phone:flex-col items-center justify-center">
-            <button className="primary py-6 max-phone:py-[1.125rem] justify-center text-center items-center shrink-0 w-[16.25rem] max-phone:w-[12.1875rem] font-button bg-primary rounded-2xl hover:-translate-y-2 max-phone:hover:-translate-y-1 hover:bg-primary-600 active:bg-primary-700">Book a Ticket</button>
-            <button className="py-5 max-phone:py-[0.9375rem] justify-center text-center items-center shrink-0 w-[16.25rem] max-phone:w-[12.1875rem] font-button rounded-2xl bg-transparent border-4 max-phone:border-3 border-solid border-secondary-400 hover:-translate-y-2 max-phone:hover:-translate-y-1 hover:border-secondary">Book a Group Ticket</button>
+            <button className="primary py-6 max-phone:py-[1.125rem] justify-center text-center items-center shrink-0 w-[16.25rem] max-phone:w-[16rem] font-button bg-primary rounded-2xl hover:-translate-y-2 max-phone:hover:-translate-y-1 hover:bg-primary-600 active:bg-primary-700">Book a Ticket</button>
+            <button className="py-5 max-phone:py-[0.9375rem] justify-center text-center items-center shrink-0 w-[16.25rem] max-phone:w-[16rem] font-button rounded-2xl bg-transparent border-4 max-phone:border-3 border-solid border-secondary-400 hover:-translate-y-2 max-phone:hover:-translate-y-1 hover:border-secondary">Book a Group Ticket</button>
           </div>
 
           <p className="mt-2 text-center text-text-gray-dark font-body">Await the Wonders!</p>
 
-          <h4 className="mt-[7rem] min-[1520px]:mt-[9rem] min-[1600px]:mt-[12rem] min-[1720px]:mt-[15rem] min-[1850px]:mt-[18rem] font-title text-center max-w-[36rem]">Speakers, <br />Activities, and More Coming Out Soon!! Await us!</h4>
+          <h4 className="mt-[7rem] min-[1520px]:mt-[9rem] min-[1600px]:mt-[12rem] min-[1720px]:mt-[15rem] min-[1850px]:mt-[18rem] font-title text-center max-w-[90vw]">Speakers, <br />Activities, and More Coming Out Soon!! Await us!</h4>
         </div>
       </section>
       
