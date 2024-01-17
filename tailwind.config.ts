@@ -7,6 +7,10 @@ const config: Config = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    screens: {
+      'tablet': '1350px',
+      'phone': '1200px',
+    },
     extend: {
       colors: {
         transparent: 'transparent',
