@@ -11,7 +11,7 @@ export default function Navigation() {
           <a href="">Await</a>
           <a href="">the</a>
           <a href="">full</a>
-          <a href="">website!</a>
+          <a href="">website</a>
         </div>
 
         {/* Book a Ticket */}

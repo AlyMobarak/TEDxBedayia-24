@@ -1,17 +1,19 @@
 import './hero.css'
 
 function testimonial(avatar_url: string, role: string, name: string, quote: string, alt: boolean) {
-  if (alt) return (<div className="w-[38.5rem] h-[6.75rem] px-10 py-4 bg-secondary-400 rounded-[1rem] flex flex-row gap-4 justify-start items-center" style={{backgroundImage: "url(\"/Hero Section/Vector Art Testimonial.png\")", backgroundSize: "100%"}}>
-          <div className="rounded-full bg-text-gray-light w-[4.75rem] h-[4.75rem]"></div>
-          <div className="flex flex-col gap-0 items-start justify-start w-[27.75rem] text-start h-full py-1">
+  if (alt) return (<div className="w-[38.5rem] h-[6.75rem] phone:w-[19.25rem] phone:h-[3.375rem] px-10 py-4 bg-secondary-400 rounded-[1rem] flex flex-row gap-4 justify-start items-center" style={{backgroundImage: "url(\"/Hero Section/Vector Art Testimonial.png\")", backgroundSize: "100%"}}>
+          <div className="rounded-full bg-text-gray-light w-[2.375rem] h-[2.375rem]">
+            <img src={avatar_url} className="h-full" alt="Avatar" />
+          </div>
+          <div className="flex flex-col gap-0 items-start justify-start w-[27.75rem] phone:w-[13.875rem] text-start h-full py-1">
             <span className="font-small"><span style={{fontWeight: 700}}>{role}</span>: {name}</span>
             <p className="font-body">"{quote}"</p>
           </div>
   </div>)
 
-  return (<div className="w-[38.5rem] h-[6.75rem] px-10 py-4 bg-primary-400 rounded-[1rem] flex flex-row gap-4 justify-start items-center" style={{backgroundImage: "url(\"/Hero Section/Vector Art Testimonial.png\")", backgroundSize: "100%"}}>
-            <div className="rounded-full bg-text-gray-light w-[4.75rem] h-[4.75rem]"></div>
-            <div className="flex flex-col gap-0 items-start justify-start w-[27.75rem] text-start h-full py-1">
+  return (<div className="w-[38.5rem] h-[6.75rem] phone:w-[19.25rem] phone:h-[3.375rem] px-10 py-4 bg-primary-400 rounded-[1rem] flex flex-row gap-4 justify-start items-center" style={{backgroundImage: "url(\"/Hero Section/Vector Art Testimonial.png\")", backgroundSize: "100%"}}>
+            <div className="rounded-full bg-text-gray-light w-[2.375rem] h-[2.375rem]"></div>
+            <div className="flex flex-col gap-0 items-start justify-start w-[27.75rem] phone:w-[13.875rem] text-start h-full py-1">
               <span className="font-small"><span style={{fontWeight: 700}}>{role}</span>: {name}</span>
               <p className="font-body">"{quote}"</p>
             </div>
@@ -19,7 +21,7 @@ function testimonial(avatar_url: string, role: string, name: string, quote: stri
 }
 
 function blurredCircles() {
-  return (<div className="">
+  return (<div>
     <div className="w-[22rem] h-[22rem] flex-shrink-0 rounded-full bg-[#8F837C] blur-[200px] absolute left-[-11rem] top-[25rem]" />
     <div className="w-[22rem] h-[22rem] flex-shrink-0 rounded-full bg-[#8F837C] blur-[200px] absolute left-[86.7vw] top-[25rem]" />
   </div>)
