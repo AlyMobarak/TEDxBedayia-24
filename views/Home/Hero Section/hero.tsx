@@ -34,8 +34,8 @@ export default function HeroSection() {
       <section id="hero" className="mx-0 w-[100%] max-w-[100vw] pt-[6.75rem] mb-[4.5rem] relative max-phone:bg-[length:80vh_100px]" style={{background: "url(\"/Hero Section/hero-image.png\") no-repeat top center", backgroundSize: "100%"}}>
         {blurredCircles()}
         <div>
-          <img className="w-[45rem] max-phone:w-[33.75rem]" src="/Hero Section/main-heading.png" alt="Main Header" />
-          <p className="text-text-gray-light text-center font-body w-[33.5rem] max-phone:w-[85vw]">Buckle up for a journey of inspiration and innovation at TEDx! Immerse yourself in a day filled with thought-provoking conversations, extraordinary performances, and enlightening experiences. Join us as we explore ideas worth spreading. Prepare to connect to a kaleidoscope of minds like your own &ndash; curious & hungry for change. </p>
+          <img className="w-[45rem] max-phone:w-[95vw]" src="/Hero Section/main-heading.png" alt="Main Header" />
+          <p className="text-text-gray-light text-center font-body w-[33.5rem] max-phone:w-[85vw] max-phone:mt-1">Buckle up for a journey of inspiration and innovation at TEDx! Immerse yourself in a day filled with thought-provoking conversations, extraordinary performances, and enlightening experiences. Join us as we explore ideas worth spreading. Prepare to connect to a kaleidoscope of minds like your own &ndash; curious & hungry for change. </p>
 
           <div className="mt-6 max-phone:mt-[1.125rem] flex gap-4 max-phone:gap-3 flex-row max-phone:flex-col items-center justify-center">
             <button className="primary py-6 max-phone:py-[1.125rem] justify-center text-center items-center shrink-0 w-[16.25rem] max-phone:w-[16rem] font-button bg-primary rounded-2xl hover:-translate-y-2 max-phone:hover:-translate-y-1 hover:bg-primary-600 active:bg-primary-700">Book a Ticket</button>

@@ -23,6 +23,10 @@
   #testimonials > div {
     animation: slideVerticallyPhone 80s linear 0s infinite alternate-reverse;
   }
+
+  #hero {
+    background-size: 100vw 80vh;
+  }
 }
 
 #hero button {
