@@ -48,7 +48,7 @@ export default function HeroSection() {
         </div>
       </section>
       
-      <section id="testimonials" className="flex flex-row gap-4 overflow-hidden max-w-[100vw] justify-start scroll-smooth">
+      <section id="testimonials" className="flex flex-row gap-4 max-phone:gap-3 overflow-hidden max-w-[100vw] justify-start scroll-smooth">
         {testimonial("", "Graduate", "Kareem", "TEDx hosts a beautiful culmination of knowledge and entertainment, curated to ensure you have the best of times.", true)}
         {testimonial("", "Attendee", "Ahmed", "This text is so good.", false)}
         {testimonial("", "Attendee", "Yasmine", "This text is so good.", true)}
