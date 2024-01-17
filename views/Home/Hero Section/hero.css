@@ -5,12 +5,24 @@
   100% {
     transform: translateX(-236rem);
   }
+}
 
-  /* 700 seconds */
+@keyframes slideVerticallyPhone {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-177rem);
+  }
 }
 
 #testimonials > div {
   animation: slideVertically 80s linear 0s infinite alternate-reverse;
+}
+@media only screen and (max-width: 1200px) {
+  #testimonials > div {
+    animation: slideVerticallyPhone 80s linear 0s infinite alternate-reverse;
+  }
 }
 
 #hero button {
