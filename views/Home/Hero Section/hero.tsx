@@ -22,8 +22,8 @@ function testimonial(avatar_url: string, role: string, name: string, quote: stri
 
 function blurredCircles() {
   return (<div>
-    <div className="w-[22rem] h-[22rem] max-phone:w-[16.5rem] max-phone:h-[16.5rem] flex-shrink-0 rounded-full bg-[#8F837C] blur-[200px] absolute left-[-11rem] top-[25rem]" />
-    <div className="w-[22rem] h-[22rem] max-phone:w-[16.5rem] max-phone:h-[16.5rem] flex-shrink-0 rounded-full bg-[#8F837C] blur-[200px] absolute left-[86.7vw] top-[25rem]" />
+    <div className="w-[22rem] h-[22rem] max-phone:w-[10.5rem] max-phone:h-[10.5rem] flex-shrink-0 rounded-full bg-[#8F837C] blur-[200px] absolute left-[-11rem] top-[25rem]" />
+    <div className="w-[22rem] h-[22rem] max-phone:w-[10.5rem] max-phone:h-[10.5rem] flex-shrink-0 rounded-full bg-[#8F837C] blur-[200px] absolute left-[86.7vw] max-phone:left-[95vw] top-[25rem]" />
   </div>)
 }
 
