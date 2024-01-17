@@ -1,7 +1,7 @@
 import './hero.css'
 
 function testimonial(avatar_url: string, role: string, name: string, quote: string, alt: boolean) {
-  if (alt) return (<div className="w-[38.5rem] h-[6.75rem] max-phone:w-[28.875rem] max-phone:h-[5.0625rem] px-10 max-phone:px-7 py-4 max-phone:py-3 bg-secondary-400 rounded-[1rem] max-phone:rounded-[0.75rem] flex flex-row gap-4 max-phone:gap-3 justify-start items-center" style={{backgroundImage: "url(\"/Hero Section/Vector Art Testimonial.png\")", backgroundSize: "100% 100%", backgroundRepeat: "no-repeat"}}>
+  if (alt) return (<div className="w-[38.5rem] h-[6.75rem] max-phone:w-[33.6875rem] max-phone:h-[5.0625rem] px-10 max-phone:px-7 py-4 max-phone:py-3 bg-secondary-400 rounded-[1rem] max-phone:rounded-[0.75rem] flex flex-row gap-4 max-phone:gap-3 justify-start items-center" style={{backgroundImage: "url(\"/Hero Section/Vector Art Testimonial.png\")", backgroundSize: "100% 100%", backgroundRepeat: "no-repeat"}}>
           <div className="rounded-full bg-text-gray-light w-[4.75rem] h-[4.75rem] max-phone:w-[2.375rem] max-phone:h-[2.375rem]">
             <img src={avatar_url} className="h-full" alt="Avatar" />
           </div>
