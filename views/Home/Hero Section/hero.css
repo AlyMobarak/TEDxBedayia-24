@@ -19,7 +19,7 @@
 #testimonials > div {
   animation: slideVertically 80s linear 0s infinite alternate-reverse;
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1150px) {
   #testimonials > div {
     animation: slideVerticallyPhone 80s linear 0s infinite alternate-reverse;
   }
