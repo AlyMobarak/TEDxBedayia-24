@@ -37,8 +37,6 @@ export default function Navigation() {
           </svg></div>
           <span className="font-body" style={{fontWeight: 500, fontStyle: "normal", letterSpacing: "0.3px"}}>BOOK A TICKET</span>
         </button>
-
-        <div className='mt-6'><span className='font-small' onClick={redirect("mailto:2hysp8jw62@privaterelay.appleid.com")}>Send us an email at 2hysp8jw62@privaterelay.appleid.com if you find any bugs visually or programatically.</span></div>
       </section>
     </center>
   )
