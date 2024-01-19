@@ -4,7 +4,7 @@
   }
   98%,
   100% {
-    transform: translateX(calc(calc(calc(-6 * 100%) + 6rem) + 100vw));
+    transform: translateX(calc(calc(calc(-6 * 100%) - 5rem) + 100vw));
   }
 }
 
@@ -14,7 +14,7 @@
   }
   98%,
   100% {
-    transform: translateX(calc(calc(calc(-6 * 100%) + 6rem) + 100vw));
+    transform: translateX(calc(calc(calc(-6 * 100%) - 3.75rem) + 100vw));
   }
 }
 
