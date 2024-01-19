@@ -1,6 +1,6 @@
 "use client"
 
-import { useRouter } from 'next/navigation'
+import { redirect, useRouter } from 'next/navigation'
 import './hero.css'
 import Image from 'next/image'
 
@@ -68,6 +68,8 @@ export default function HeroSection() {
         {testimonial("/Avatars/mom.png", "Parent", "Someone's Mom", "TEDx provided my man a unique, enriching experience with diverse perspectives and inspiring talks. Very grateful!", true)}
         {testimonial("/Avatars/dad.png", "Parent", "Someone's Dad", "Last year was more than talks: a transformative journey into knowledge and creativity. Well done!", false)}
       </section>
+
+      <div className='mt-20 font-small temp-note text-text-gray-dark'>Send us an email at <a className='font-body text-secondary-200' href="mailto:2hysp8jw62@privaterelay.appleid.com">2hysp8jw62@privaterelay.appleid.com</a> if you find any bugs visually or programatically.</div>
     </center>
   )
 }
