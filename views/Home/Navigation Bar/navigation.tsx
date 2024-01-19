@@ -3,7 +3,7 @@ import './navigation.css'
 export default function Navigation() {
   return (
     <center className="w-screen z-50 fixed top-0 backdrop-blur-[5px]" style={{background: "rgba(16, 13, 38, 0.10)"}}>
-      <section id="nav" className="flex flex-row items-center justify-between max-w-[1088px] min-w-[1088px] h-[5.5rem]">
+      <section id="nav" className="flex flex-row items-center justify-between max-w-[1088px] min-w-[1088px] max-phone:max-w-[90vw] max-phone:min-w-[90vw] h-[5.5rem] max-phone:h-[4.125rem]">
         <img className="h-9 w-[28rem] max-phone:h-[1.6875rem] max-phone:w-[21rem]" src="/Nav Bar/main-logo.png" alt="Event's Logo" />
 
         {/* Links */}
