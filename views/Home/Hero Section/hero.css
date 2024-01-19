@@ -2,8 +2,9 @@
   0% {
     transform: translateX(0px);
   }
+  98%,
   100% {
-    transform: translateX(calc(calc(-6 * 100%) + 5rem));
+    transform: translateX(calc(calc(calc(-6 * 100%) + 6rem) + 100vw));
   }
 }
 
@@ -11,8 +12,9 @@
   0% {
     transform: translateX(0px);
   }
+  98%,
   100% {
-    transform: translateX(calc(calc(-6 * 100%) + 3.75rem));
+    transform: translateX(calc(calc(calc(-6 * 100%) + 6rem) + 100vw));
   }
 }
 
@@ -22,7 +24,7 @@
 
 @media only screen and (max-width: 1150px) {
   #testimonials > div {
-    animation: slideVerticallyPhone 80s linear 2s infinite alternate-reverse;
+    animation: slideVerticallyPhone 80s linear 2s infinite alternate;
   }
 
   #hero {
