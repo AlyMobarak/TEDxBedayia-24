@@ -53,11 +53,11 @@ export default function HeroSection() {
       
       <section id="testimonials" className="flex flex-row gap-4 max-phone:gap-3 overflow-hidden max-w-[100vw] justify-start scroll-smooth">
         {testimonial("/Avatars/kareem.png", "Graduate", "Kareem", "TEDx hosts a beautiful culmination of knowledge and entertainment, curated to ensure you have the best of times.", true)}
-        {testimonial("/Avatars/ahmed.png", "High School Student", "Ahmed", "This text is so good.", false)}
-        {testimonial("/Avatars/kareem.png", "High School Student", "Yasmine", "This text is so good.", true)}
-        {testimonial("/Avatars/girl.png", "Team Member", "Jana", "This text is so good.", false)}
-        {testimonial("/Avatars/mom.png", "Parent", "Someone's Mom", "This text is so good.", true)}
-        {testimonial("/Avatars/dad.png", "Parent", "Someone's Dad", "This text is so good.", false)}
+        {testimonial("/Avatars/ahmed.png", "High School Student", "Ahmed", "I really loved last year's event &ndash; mind-blowing and sparking curiosity. Can't wait for the next one!", false)}
+        {testimonial("/Avatars/kareem.png", "High School Student", "Yasmine", "TEDx@Bedayia was a magical blend of wisdom and fun. Talks were inspiring, creating an incredible vibe.", true)}
+        {testimonial("/Avatars/girl.png", "Team Member", "Jana", "Being part of TEDx Bedayia was an honor, witnessing ideas connect with the audience&ndash;fulfilling and fostering growth.", false)}
+        {testimonial("/Avatars/mom.png", "Parent", "Someone's Mom", "TEDx provided my man a unique, enriching experience with diverse perspectives and inspiring talks. Very grateful!", true)}
+        {testimonial("/Avatars/dad.png", "Parent", "Someone's Dad", "Last year was more than talks: a transformative journey into knowledge and creativity. Well done!", false)}
       </section>
     </center>
   )
