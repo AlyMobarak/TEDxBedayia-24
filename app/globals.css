@@ -112,6 +112,35 @@ h4 {
     line-height: 2.975rem;
     letter-spacing: -0.015em;
   }
+
+  #testimonials > .font-body {
+    font-size: 1em;
+    line-height: calc(1.5 * 1rem);
+    letter-spacing: 0px;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  #testimonials > .font-small {
+    font-size: 0.75em;
+    line-height: 1.25rem;
+    letter-spacing: 0px;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  #testimonials > .font-button {
+    text-align: center;
+    font-size: 1.25em;
+    line-height: calc(1.2 * 1.25rem);
+    font-style: normal;
+  }
+
+  #testimonials > h4 {
+    font-size: 3em !important;
+    line-height: 3.5rem;
+    letter-spacing: -0.03em;
+  }
 }
 
 html {
