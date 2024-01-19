@@ -85,6 +85,18 @@ h4 {
     line-height: 2.265rem;
     letter-spacing: -0.015em;
   }
+
+  #testimonials > .font-body {
+    font-size: 0.5em;
+    line-height: calc(1.5 * 0.5rem);
+    font-weight: 400;
+  }
+
+  #testimonials > .font-small {
+    font-size: 0.375em;
+    line-height: 0.625rem;
+    font-weight: 400;
+  }
 }
 
 /* 1350px: tablet breakpoint */
