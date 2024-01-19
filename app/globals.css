@@ -41,6 +41,14 @@
   font-style: normal;
 }
 
+.font-special {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.25em;
+  line-height: 1.25rem;
+  font-weight: 700;
+  font-style: normal;
+}
+
 .font-small {
   font-size: 0.75em;
   line-height: 1.25rem;
@@ -67,6 +75,11 @@ h4 {
     font-size: 0.75em;
     line-height: calc(1.5 * 0.75rem);
     font-weight: 400;
+  }
+
+  .font-special {
+    font-size: 0.9375em;
+    line-height: 0.9375rem;
   }
 
   .font-small {
@@ -117,6 +130,11 @@ h4 {
   .font-button {
     font-size: 1.0625em;
     line-height: calc(1.2 * 1.0625rem);
+  }
+
+  .font-special {
+    font-size: 1.0625em;
+    line-height: 1.0625rem;
   }
 
   h4 {

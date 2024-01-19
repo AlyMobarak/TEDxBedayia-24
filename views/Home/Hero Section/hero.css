@@ -44,3 +44,30 @@
     0 19px 38px rgba(141, 37, 71, 0.25),
     0 15px 12px rgba(141, 37, 71, 0.22);
 }
+
+#hero .secondary-wrapper {
+  transition:
+    transform ease-in 300ms,
+    box-shadow ease-in 300ms,
+    background-color ease-in 300ms,
+    border ease-in 300ms;
+
+  width: 17.25rem;
+  height: 5.5rem;
+}
+
+#hero .secondary-wrapper:hover > * {
+  border-color: #32258d;
+}
+
+#hero .secondary-wrapper:hover > div {
+  background-color: #32258d;
+}
+
+#hero .secondary-wrapper > div {
+  transition:
+    transform ease-in 300ms,
+    box-shadow ease-in 300ms,
+    background-color ease-in 300ms,
+    border ease-in 300ms;
+}
