@@ -4,7 +4,7 @@ import Image from 'next/image'
 function testimonial(avatar_url: string, role: string, name: string, quote: string, alt: boolean) {
   if (alt) return (<div className="w-[38.5rem] h-[6.75rem] max-phone:min-w-[28.875rem] max-phone:h-[5.0625rem] px-10 max-phone:px-[1.875rem] py-4 max-phone:py-3 bg-secondary-400 rounded-[1rem] max-phone:rounded-[0.75rem] flex flex-row gap-4 max-phone:gap-3 justify-start items-center" style={{backgroundImage: "url(\"/Hero Section/Vector Art Testimonial.png\")", backgroundSize: "100% 100%", backgroundRepeat: "no-repeat"}}>
           <div className="rounded-full bg-text-gray-light w-[4.75rem] h-[4.75rem] max-phone:w-[3.0625rem] max-phone:h-[3.0625rem]">
-            <Image src={avatar_url} className="h-full rounded-full" alt="Avatar" />
+            <Image width="100" height="100" src={avatar_url} className="h-full rounded-full" alt="Avatar" />
           </div>
           <div className="flex flex-col gap-0 items-start justify-start w-[27.75rem] max-phone:w-[13.875rem] text-start h-full py-1">
             <span className="font-small"><span style={{fontWeight: 700}}>{role}</span>: {name}</span>
@@ -14,7 +14,7 @@ function testimonial(avatar_url: string, role: string, name: string, quote: stri
 
   return (<div className="w-[38.5rem] h-[6.75rem] max-phone:min-w-[28.875rem] max-phone:h-[5.0625rem] px-10 max-phone:px-[1.875rem] py-4 max-phone:py-3 bg-primary-400 rounded-[1rem] max-phone:rounded-[0.75rem] flex flex-row gap-4 max-phone:gap-3 justify-start items-center" style={{backgroundImage: "url(\"/Hero Section/Vector Art Testimonial alt.png\")", backgroundSize: "100% 100%", backgroundRepeat: "no-repeat"}}>
             <div className="rounded-full bg-text-gray-light w-[4.75rem] h-[4.75rem] max-phone:w-[3.0625rem] max-phone:h-[3.0625rem]">
-              <Image src={avatar_url} className="h-full rounded-full" alt="Avatar" />
+              <Image width="100" height="100" src={avatar_url} className="h-full rounded-full" alt="Avatar" />
             </div>
             <div className="flex flex-col gap-0 items-start justify-start w-[27.75rem] max-phone:w-[13.875rem] text-start h-full py-1">
               <span className="font-small"><span style={{fontWeight: 700}}>{role}</span>: {name}</span>
@@ -37,7 +37,7 @@ export default function HeroSection() {
       {/* 1200px Nav Bar needs to be condensed a bit and font further lowered. 1350px font lowers and nav bar stays same. */}
       <section id="hero" className="mx-0 w-[100%] max-w-[100vw] pt-[6.75rem] mb-[4.5rem] relative max-phone:bg-[length:80vh_100px]" style={{background: "url(\"/Hero Section/hero-image.png\") no-repeat top center", backgroundSize: "100%"}}>
         <div>
-          <Image className="w-[45rem] max-phone:w-[95vw]" src="/Hero Section/main-heading.png" alt="Main Header" />
+          <Image width="1440" height="358" className="w-[45rem] max-phone:w-[95vw]" src="/Hero Section/main-heading.png" alt="Main Header" />
           <p className="text-text-gray-light text-center font-body w-[33.5rem] max-phone:w-[85vw] max-phone:mt-3 max-tablet:mt-2">Buckle up for a journey of inspiration and innovation at TEDx! Immerse yourself in a day filled with thought-provoking conversations, extraordinary performances, and enlightening experiences. Join us as we explore ideas worth spreading. Prepare to connect to a kaleidoscope of minds like your own &ndash; curious & hungry for change. </p>
 
           <div className="mt-6 max-phone:mt-[1.125rem] flex gap-4 max-phone:gap-3 flex-row max-phone:flex-col items-center justify-center">
@@ -53,9 +53,9 @@ export default function HeroSection() {
       
       <section id="testimonials" className="flex flex-row gap-4 max-phone:gap-3 overflow-hidden max-w-[100vw] justify-start scroll-smooth">
         {testimonial("/Avatars/kareem.png", "Graduate", "Kareem", "TEDx hosts a beautiful culmination of knowledge and entertainment, curated to ensure you have the best of times.", true)}
-        {testimonial("/Avatars/ahmed.png", "High School Student", "Ahmed", "I really loved last year's event &ndash; mind-blowing and sparking curiosity. Can't wait for the next one!", false)}
+        {testimonial("/Avatars/ahmed.png", "High School Student", "Ahmed", "I really loved last year's event — mind-blowing and sparking curiosity. Can't wait for the next one!", false)}
         {testimonial("/Avatars/kareem.png", "High School Student", "Yasmine", "TEDx@Bedayia was a magical blend of wisdom and fun. Talks were inspiring, creating an incredible vibe.", true)}
-        {testimonial("/Avatars/girl.png", "Team Member", "Jana", "Being part of TEDx Bedayia was an honor, witnessing ideas connect with the audience&ndash;fulfilling and fostering growth.", false)}
+        {testimonial("/Avatars/girl.png", "Team Member", "Jana", "Being part of TEDx Bedayia was an honor, witnessing ideas connect with the audience—fulfilling and fostering growth.", false)}
         {testimonial("/Avatars/mom.png", "Parent", "Someone's Mom", "TEDx provided my man a unique, enriching experience with diverse perspectives and inspiring talks. Very grateful!", true)}
         {testimonial("/Avatars/dad.png", "Parent", "Someone's Dad", "Last year was more than talks: a transformative journey into knowledge and creativity. Well done!", false)}
       </section>
