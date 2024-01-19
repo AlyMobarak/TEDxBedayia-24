@@ -22,7 +22,7 @@
   animation: slideVertically 75s ease-in 2s infinite alternate;
 }
 
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 1100px) {
   #testimonials > div {
     animation: slideVerticallyPhone 75s linear 2s infinite alternate;
   }
