@@ -7,6 +7,10 @@
   --background: #100d26;
 }
 
+.fixed {
+  -webkit-backface-visibility: hidden;
+}
+
 .nav-links > a {
   position: relative;
 }
