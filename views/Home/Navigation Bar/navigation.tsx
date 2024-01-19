@@ -1,21 +1,30 @@
+"use client"
+
+import Link from 'next/link'
 import './navigation.css'
+import { usePathname } from 'next/navigation'
 
 export default function Navigation() {
+  const pathname = usePathname();
   return (
     <center className="w-screen z-50 fixed top-0 backdrop-blur-[5px]" style={{background: "rgba(16, 13, 38, 0.10)"}}>
-      <section id="nav" className="flex flex-row items-center justify-between max-w-[1088px] min-w-[1088px] max-phone:max-w-[90vw] max-phone:min-w-[90vw] h-[5.5rem] max-phone:h-[4.125rem]">
-        <img className="h-9 w-[28rem] max-phone:h-[1.6875rem] max-phone:w-[21rem]" src="/Nav Bar/main-logo.png" alt="Event's Logo" />
+      <section id="nav" className="flex flex-row max-phone:flex-col items-center justify-between max-phone:justify-center max-w-[1088px] min-w-[1088px] max-phone:max-w-[90vw] max-phone:min-w-[90vw] h-[5.5rem] max-phone:h-[6.625rem]">
+        <Link href="/" className="cursor-pointer hover:opacity-75">
+          <img className="h-9 w-[28rem] max-phone:h-[1.6875rem] max-phone:w-[21rem]" src="/Nav Bar/main-logo.png" alt="Event's Logo" />
+        </Link>
+        
 
         {/* Links */}
-        <div className="flex flex-row justify-between gap-6 font-body items-center max-phone:hidden">
-          <a href="">Await</a>
-          <a href="">the</a>
-          <a href="">full</a>
-          <a href="">website</a>
+        <div className="nav-links flex flex-row justify-between gap-6 font-body items-center max-phone:hidden">
+          <Link href="">{pathname == "/" ? "Await" : (pathname == "/booking/one" ? "Book a Group Ticket (4)" : "Book one Ticket")}</Link>
+          {/* 15% OFF if on /booking/one */}
+          <Link href="" className={(pathname != "/") ? 'hidden' : ''}>the</Link>
+          <Link href="" className={(pathname != "/") ? 'hidden' : ''}>full</Link>
+          <Link href="" className={(pathname != "/") ? 'hidden' : ''}>website</Link>
         </div>
 
         {/* Book a Ticket */}
-        <button className="bg-primary active:bg-primary-700 hover:bg-primary-600 transition-all flex flex-row items-center py-2 px-6 gap-2 max-phone:hidden" style={{borderRadius: "0.5rem"}}>
+        <button className={`bg-primary active:bg-primary-700 hover:bg-primary-600 transition-all flex flex-row items-center py-2 px-6 gap-2 {[max-phone:hidden]} max-phone:mt-4 ${pathname != "/" ? 'hidden' : ''}`} style={{borderRadius: "0.5rem"}}>
           <div className="w-6 h-6"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" style={{width: "100%", height: "100%"}}>
             <path d="M10 14H7" stroke="white" strokeWidth="2" strokeLinecap="round"/>
             <path d="M13 17H7" stroke="white" strokeWidth="2" strokeLinecap="round"/>
