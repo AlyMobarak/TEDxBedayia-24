@@ -25,14 +25,14 @@ function testimonial(avatar_url: string, role: string, name: string, quote: stri
 
 function blurredCircles() {
   return (<div>
-    <div className="w-[22rem] h-[22rem] max-phone:w-[10.5rem] max-phone:h-[10.5rem] flex-shrink-0 rounded-full bg-[#8F837C] blur-[200px] absolute left-[-11rem] top-[25rem]" />
-    <div className="w-[22rem] h-[22rem] max-phone:w-[10.5rem] max-phone:h-[10.5rem] flex-shrink-0 rounded-full bg-[#8F837C] blur-[200px] absolute left-[86.7vw] max-phone:left-[95vw] top-[25rem]" />
+    <div className="w-[22rem] h-[22rem] max-phone:w-[10.5rem] max-phone:h-[10.5rem] flex-shrink-0 rounded-full bg-[#8F837C] blur-[200px] absolute left-[-11rem] top-[25rem] max-phone:left-[-5.25rem]" />
+    <div className="w-[22rem] h-[22rem] max-phone:w-[10.5rem] max-phone:h-[10.5rem] flex-shrink-0 rounded-full bg-[#8F837C] blur-[200px] absolute right-[-11rem] max-phone:right-[-5.25rem] top-[25rem]" />
   </div>)
 }
 
 export default function HeroSection() {
   return (
-    <center>
+    <center style={{overflow: "hidden"}}>
       {blurredCircles()}
       {/* 1200px Nav Bar needs to be condensed a bit and font further lowered. 1350px font lowers and nav bar stays same. */}
       <section id="hero" className="mx-0 w-[100%] max-w-[100vw] pt-[6.75rem] mb-[4.5rem] relative max-phone:bg-[length:80vh_100px]" style={{background: "url(\"/Hero Section/hero-image.png\") no-repeat top center", backgroundSize: "100%"}}>
