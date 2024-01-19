@@ -3,7 +3,7 @@ import './hero.css'
 function testimonial(avatar_url: string, role: string, name: string, quote: string, alt: boolean) {
   if (alt) return (<div className="w-[38.5rem] h-[6.75rem] max-phone:min-w-[28.875rem] max-phone:h-[5.0625rem] px-10 max-phone:px-[1.875rem] py-4 max-phone:py-3 bg-secondary-400 rounded-[1rem] max-phone:rounded-[0.75rem] flex flex-row gap-4 max-phone:gap-3 justify-start items-center" style={{backgroundImage: "url(\"/Hero Section/Vector Art Testimonial.png\")", backgroundSize: "100% 100%", backgroundRepeat: "no-repeat"}}>
           <div className="rounded-full bg-text-gray-light w-[4.75rem] h-[4.75rem] max-phone:w-[3.0625rem] max-phone:h-[3.0625rem]">
-            <img src={avatar_url} className="h-full" alt="Avatar" />
+            <img src={avatar_url} className="h-full rounded-full" alt="Avatar" />
           </div>
           <div className="flex flex-col gap-0 items-start justify-start w-[27.75rem] max-phone:w-[13.875rem] text-start h-full py-1">
             <span className="font-small"><span style={{fontWeight: 700}}>{role}</span>: {name}</span>
@@ -11,8 +11,10 @@ function testimonial(avatar_url: string, role: string, name: string, quote: stri
           </div>
   </div>)
 
-  return (<div className="w-[38.5rem] h-[6.75rem] max-phone:min-w-[28.875rem] max-phone:h-[5.0625rem] px-10 max-phone:px-[1.875rem] py-4 max-phone:py-3 bg-primary-400 rounded-[1rem] max-phone:rounded-[0.75rem] flex flex-row gap-4 max-phone:gap-3 justify-start items-center" style={{backgroundImage: "url(\"/Hero Section/Vector Art Testimonial.png\")", backgroundSize: "100% 100%", backgroundRepeat: "no-repeat"}}>
-            <div className="rounded-full bg-text-gray-light w-[4.75rem] h-[4.75rem] max-phone:w-[3.0625rem] max-phone:h-[3.0625rem]"></div>
+  return (<div className="w-[38.5rem] h-[6.75rem] max-phone:min-w-[28.875rem] max-phone:h-[5.0625rem] px-10 max-phone:px-[1.875rem] py-4 max-phone:py-3 bg-primary-400 rounded-[1rem] max-phone:rounded-[0.75rem] flex flex-row gap-4 max-phone:gap-3 justify-start items-center" style={{backgroundImage: "url(\"/Hero Section/Vector Art Testimonial alt.png\")", backgroundSize: "100% 100%", backgroundRepeat: "no-repeat"}}>
+            <div className="rounded-full bg-text-gray-light w-[4.75rem] h-[4.75rem] max-phone:w-[3.0625rem] max-phone:h-[3.0625rem]">
+              <img src={avatar_url} className="h-full rounded-full" alt="Avatar" />
+            </div>
             <div className="flex flex-col gap-0 items-start justify-start w-[27.75rem] max-phone:w-[13.875rem] text-start h-full py-1">
               <span className="font-small"><span style={{fontWeight: 700}}>{role}</span>: {name}</span>
               <p className="font-body">"{quote}"</p>
@@ -49,12 +51,12 @@ export default function HeroSection() {
       </section>
       
       <section id="testimonials" className="flex flex-row gap-4 max-phone:gap-3 overflow-hidden max-w-[100vw] justify-start scroll-smooth">
-        {testimonial("", "Graduate", "Kareem", "TEDx hosts a beautiful culmination of knowledge and entertainment, curated to ensure you have the best of times.", true)}
-        {testimonial("", "Attendee", "Ahmed", "This text is so good.", false)}
-        {testimonial("", "Attendee", "Yasmine", "This text is so good.", true)}
-        {testimonial("", "Event Supervisor", "Mrs. Reham", "This text is so good.", false)}
-        {testimonial("", "Attendee", "Someone's Mom", "This text is so good.", true)}
-        {testimonial("", "Attendee", "Someone's Dad", "This text is so good.", false)}
+        {testimonial("/Avatars/kareem.png", "Graduate", "Kareem", "TEDx hosts a beautiful culmination of knowledge and entertainment, curated to ensure you have the best of times.", true)}
+        {testimonial("/Avatars/ahmed.png", "High School Student", "Ahmed", "This text is so good.", false)}
+        {testimonial("/Avatars/kareem.png", "High School Student", "Yasmine", "This text is so good.", true)}
+        {testimonial("/Avatars/girl.png", "Team Member", "Jana", "This text is so good.", false)}
+        {testimonial("/Avatars/mom.png", "Parent", "Someone's Mom", "This text is so good.", true)}
+        {testimonial("/Avatars/dad.png", "Parent", "Someone's Dad", "This text is so good.", false)}
       </section>
     </center>
   )
