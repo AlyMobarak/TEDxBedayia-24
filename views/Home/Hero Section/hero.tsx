@@ -45,7 +45,7 @@ export default function HeroSection() {
           <Image width="1440" height="358" className="w-[45rem] max-phone:w-[95vw]" src="/Hero Section/main-heading.png" alt="Main Header" />
           <p className="text-text-gray-light text-center font-body w-[33.5rem] max-phone:w-[85vw] max-phone:mt-3 max-tablet:mt-2">Buckle up for a journey of inspiration and innovation at TEDx! Immerse yourself in a day filled with thought-provoking conversations, extraordinary performances, and enlightening experiences. Join us as we explore ideas worth spreading. Prepare to connect to a kaleidoscope of minds like your own &ndash; curious & hungry for change. </p>
 
-          <div className="ml-2 max-tablet:ml-0 mt-6 max-phone:mt-[1.125rem] flex gap-4 max-phone:gap-3 flex-row max-phone:flex-col items-end max-phone:items-center max-phone:justify-start justify-center">
+          <div className="ml-2 max-tablet:ml-0 mt-6 max-phone:mt-[1.125rem] flex gap-4 max-phone:gap-3 flex-row max-phone:flex-col items-end max-phone:items-center max-phone:justify-center justify-center">
             <button className="primary py-6 max-phone:py-[1.125rem] justify-center text-center items-center shrink-0 w-[16.25rem] max-phone:w-[16rem] font-button bg-primary rounded-2xl hover:-translate-y-2 max-phone:hover:-translate-y-1 hover:bg-primary-600 active:bg-primary-700" onClick={() => router.push('/booking/one')}>Book a Ticket</button>
 
             <div className="relative hover:-translate-y-2 max-phone:hover:-translate-y-1 secondary-wrapper">
@@ -69,7 +69,7 @@ export default function HeroSection() {
         {testimonial("/Avatars/dad.png", "Parent", "Someone's Dad", "Last year was more than talks: a transformative journey into knowledge and creativity. Well done!", false)}
       </section>
 
-      <div className='mt-20 font-small temp-note text-text-gray-dark'>Send us an email at <a className='font-body text-secondary-200' href="mailto:2hysp8jw62@privaterelay.appleid.com">2hysp8jw62@privaterelay.appleid.com</a> if you find any bugs visually or programatically.</div>
+      <div className='mt-20 w-[33.5rem] max-phone:w-[95vw] font-small temp-note text-text-gray-dark'>Send us an email at <a className='font-body text-secondary-200' href="mailto:2hysp8jw62@privaterelay.appleid.com">2hysp8jw62@privaterelay.appleid.com</a> if you find any bugs visually or programatically.</div>
     </center>
   )
 }
