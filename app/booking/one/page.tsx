@@ -8,7 +8,7 @@ import { FormEvent } from "react";
 function largeInput(name: string, required: boolean, type: string, placeholder: string, svgElement: JSX.Element) {
     return (<center>
         {/* <input type={type} name={name} id={name} className="mb-4 w-[27.75rem] h-[3.5rem] rounded-[1rem] px-3" /> */}
-        <div id="main-wrapper-textbox" className="w-[27.75rem] h-[3.5rem] rounded-[1rem] px-3 bg-textbox flex flex-row justify-between items-center">
+        <div id="main-wrapper-textbox" className="w-[27.75rem] max-phone:w-[80vw] h-[3.5rem] rounded-[1rem] px-3 bg-textbox flex flex-row justify-between items-center">
             <div className="relative h-[3.5rem] py-[10px] w-[24rem] cursor-pointer" onClick={() => document.getElementById(name)!!.focus()}>
                 <input type={type} name={name} id={name} required={required} placeholder="..." className="cursor-pointer bg-transparent border-transparent font-bold w-[24rem] absolute left-0 bottom-[10px]" style={{fontFamily: "Sansation, sans-serif", lineHeight: "1.5rem", fontSize: "1em"}} />
                 <label style={{fontFamily: "Sansation, sans-serif", lineHeight: "0.75rem", color: "rgba(223, 223, 223, 0.70)", fontSize: "0.75em"}} className="cursor-pointer absolute left-0 top-[10px] font-bold" htmlFor={name}>{placeholder}</label>
@@ -38,8 +38,8 @@ function smallInput(name: string, required: boolean, type: string, placeholder: 
 }
 //! EDIT "name" BASED ON GOOGLE FORMS
 function yourDetails() {
-    return (<section id="personal-details" className="w-[27.75rem]">
-        <h2 className="font-[Sansation] text-[1.75em]/[2.5rem] font-bold">Your Details</h2>
+    return (<section id="personal-details" className="w-[27.75rem] max-phone:w-[80vw]">
+        <h2 className="font-[Sansation] text-[1.75em]/[2.5rem] font-bold max-phone:text-center">Your Details</h2>
         <div className="flex flex-col gap-4 mt-5">
             {/* <div className="flex flex-row gap-11">
                 {smallInput("first-name", true, "text", "First Name", <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M19 11V8.2C19 7.0799 19 6.51984 18.782 6.09202C18.5903 5.71569 18.2843 5.40973 17.908 5.21799C17.4802 5 16.9201 5 15.8 5H7.2C6.0799 5 5.51984 5 5.09202 5.21799C4.71569 5.40973 4.40973 5.71569 4.21799 6.09202C4 6.51984 4 7.07989 4 8.2V13.8C4 14.9201 4 15.4802 4.21799 15.908C4.40973 16.2843 4.71569 16.5903 5.09202 16.782C5.51984 17 6.07989 17 7.2 17H14" stroke="white" stroke-width="2" stroke-linecap="round"/><path d="M8 13H12" stroke="white" stroke-width="2" stroke-linecap="round"/><path d="M8 9H15" stroke="white" stroke-width="2" stroke-linecap="round"/><circle cx="18" cy="15" r="1" stroke="white" stroke-width="2"/><path d="M20 20C20 20 19.5 19 18 19C16.5 19 16 20 16 20" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>)}
@@ -85,7 +85,7 @@ export default function BookATicketPage() {
         <Image width="1001" height="2430" alt="" className="absolute right-0 top-0 w-[60vw] max-phone:hidden" src="/one-ticket-side.png"></Image>
         <Navigation />
 
-        <section id="book-ticket" className="mx-0 w-[100vw] max-w-[100vw] pt-[6.75rem] mb-[4.5rem] px-[11rem] max-phone:width-[90vw] max-phone:max-w-[90vw] text-start">
+        <section id="book-ticket" className="mx-0 w-[100vw] max-w-[100vw] pt-[6.75rem] mb-[4.5rem] px-[11rem] max-phone:px-0 max-phone:width-[80vw] max-phone:max-w-[80vw] text-start">
             <h1 className="text-white font-title text-[3.5em]/[4.25rem] tracking-[-0.035rem] font-semibold text-start">Booking a Ticket<span className="text-primary">.</span></h1>
             <p className="font-body mt-4 text-text-gray-dark text-start">Note: For outsiders, one of our members will contact you regarding your ticket. <br />Due to space constraints and limits, not everyone who applies will get a ticket.<br /><br /><span className="font-bold text-text-gray-light">Date</span>: Friday, 16th February, 2024<br /><span className="font-bold text-text-gray-light">Time</span>: 4 PM to 10:30 PM<br /><span className="font-bold text-text-gray-light">Location</span>: Bedayia International School, Gate 2<br /><span className="font-bold text-text-gray-light">Individual Ticket</span>: 300 LE<br /><br /><span className="text-white">Hurry up and reserve your place now!</span></p>
 
