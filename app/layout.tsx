@@ -33,7 +33,7 @@ export default function RootLayout({
         <title>TEDxYouth@BedayiaSchool&apos;24</title>
       </head>
       <body>
-        <Navigation />
+        {/* <Navigation /> */}
         <main>{children}</main>
       </body>
     </html>

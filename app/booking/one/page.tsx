@@ -2,13 +2,15 @@
 
 import Navigation from "@/views/Home/Navigation Bar/navigation";
 import './tickets.css'
+import Image from "next/image";
+import { FormEvent } from "react";
 
 function largeInput(name: string, required: boolean, type: string, placeholder: string, svgElement: JSX.Element) {
     return (<center>
         {/* <input type={type} name={name} id={name} className="mb-4 w-[27.75rem] h-[3.5rem] rounded-[1rem] px-3" /> */}
         <div id="main-wrapper-textbox" className="w-[27.75rem] h-[3.5rem] rounded-[1rem] px-3 bg-textbox flex flex-row justify-between items-center">
             <div className="relative h-[3.5rem] py-[10px] w-[24rem] cursor-pointer" onClick={() => document.getElementById(name)!!.focus()}>
-                <input type={type} name={name} id={name} placeholder="..." className="cursor-pointer bg-transparent border-transparent font-bold w-[24rem] absolute left-0 bottom-[10px]" style={{fontFamily: "Sansation, sans-serif", lineHeight: "1.5rem", fontSize: "1em"}} />
+                <input type={type} name={name} id={name} required={required} placeholder="..." className="cursor-pointer bg-transparent border-transparent font-bold w-[24rem] absolute left-0 bottom-[10px]" style={{fontFamily: "Sansation, sans-serif", lineHeight: "1.5rem", fontSize: "1em"}} />
                 <label style={{fontFamily: "Sansation, sans-serif", lineHeight: "0.75rem", color: "rgba(223, 223, 223, 0.70)", fontSize: "0.75em"}} className="cursor-pointer absolute left-0 top-[10px] font-bold" htmlFor={name}>{placeholder}</label>
             </div>
 
@@ -24,7 +26,7 @@ function smallInput(name: string, required: boolean, type: string, placeholder: 
         {/* <input type={type} name={name} id={name} className="mb-4 w-[27.75rem] h-[3.5rem] rounded-[1rem] px-3" /> */}
         <div id="main-wrapper-textbox" className="w-[12.5rem] h-[3.5rem] rounded-[1rem] px-3 bg-textbox flex flex-row justify-between items-center">
             <div className="relative h-[3.5rem] py-[10px] w-[8.75rem] cursor-pointer" onClick={() => document.getElementById(name)!!.focus()}>
-                <input type={type} name={name} id={name} placeholder="..." className="cursor-pointer bg-transparent border-transparent font-bold w-[8.75rem] absolute left-0 bottom-[10px]" style={{fontFamily: "Sansation, sans-serif", lineHeight: "1.5rem", fontSize: "1em"}} />
+                <input type={type} name={name} id={name} required={required} placeholder="..." className="cursor-pointer bg-transparent border-transparent font-bold w-[8.75rem] absolute left-0 bottom-[10px]" style={{fontFamily: "Sansation, sans-serif", lineHeight: "1.5rem", fontSize: "1em"}} />
                 <label style={{fontFamily: "Sansation, sans-serif", lineHeight: "0.75rem", color: "rgba(223, 223, 223, 0.70)", fontSize: "0.75em"}} className="cursor-pointer absolute left-0 top-[10px] font-bold" htmlFor={name}>{placeholder}</label>
             </div>
 
@@ -52,15 +54,56 @@ function yourDetails() {
     </section>)
 }
 
+function onFormSubmission(e: FormEvent<HTMLFormElement>) {
+    e.preventDefault()
+    const data = new FormData(e.target as HTMLFormElement);
+    let formElement = document.getElementById("one-ticket-form")
+
+    console.log(data.get("first-name"))
+    let individualTicketForm = "https://docs.google.com/forms/d/e/1FAIpQLSfCMc5WpErjbdEL9W9FNinF7QUy_Ad21R1P77Sl9w8oqpVOPg/formResponse"
+
+    // Validation Phase
+    // ...
+
+    // Processing Spaces, and special characters.
+
+    // Sending to Google Phase
+    let fullName = data.get("first-name") as string + data.get("last-name")
+    let age = data.get("age")?.toString()
+    let phone = data.get("phone")?.toString()
+    let email = data.get("email")?.toString()
+    let occupation = data.get("occupation")?.toString()
+
+
+    fetch("https://docs.google.com/forms/d/e/1FAIpQLSfCXu2K2vf5kNqiZRstKeH_h3AYDJNZ4prlVbowOKdMss46iw/formResponse", {
+        "body": `entry.414486256=Option+1`,
+        "cache": "default",
+        "credentials": "include",
+        "headers": {
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+            "Origin": "https://docs.google.com/",
+            "Accept-Language": "en-US,en;q=0.9",
+            "Content-Type": "application/x-www-form-urlencoded",
+            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1.2 Safari/605.1.15"
+        },
+        "method": "POST",
+        "mode": "cors",
+        "redirect": "follow",
+        "referrer": "https://docs.google.com/",
+        "referrerPolicy": "strict-origin-when-cross-origin"
+    })
+}
+
 export default function BookATicketPage() {
     return (<center className='wrapper'>
-        {/* <Navigation /> */}
+        <Image width="1001" height="2430" alt="" className="absolute right-0 top-0 w-[60vw] max-phone:hidden" src="/one-ticket-side.png"></Image>
+        <Navigation />
 
         <section id="book-ticket" className="mx-0 w-[100vw] max-w-[100vw] pt-[6.75rem] mb-[4.5rem] max-phone:bg-[length:80vh_100px] px-[11rem] text-start">
             <h1 className="text-white font-title text-[3.5em]/[4.25rem] tracking-[-0.035rem] font-semibold text-start">Booking a Ticket<span className="text-primary">.</span></h1>
-            <p className="font-body mt-4 text-text-gray-light text-start">Note: For outsiders, one of our members will contact you regarding your ticket. <br />Due to space constraints and limits, not everyone who applies will get a ticket. <br /><br /><span className="text-white">Hurry up and reserve your place now!</span></p>
+            <p className="font-body mt-4 text-text-gray-dark text-start">Note: For outsiders, one of our members will contact you regarding your ticket. <br />Due to space constraints and limits, not everyone who applies will get a ticket.<br /><br /><span className="font-bold text-text-gray-light">Date</span>: Friday, 16th February, 2024<br /><span className="font-bold text-text-gray-light">Time</span>: 4 PM to 10:30 PM<br /><span className="font-bold text-text-gray-light">Location</span>: Bedayia International School, Gate 2<br /><span className="font-bold text-text-gray-light">Individual Ticket</span>: 300 LE<br /><br /><span className="text-white">Hurry up and reserve your place now!</span></p>
 
-            <form action="/" method="get" className="mt-20 flex flex-col items-start">
+            <form id="one-ticket-form" onSubmit={(e) => onFormSubmission(e)} className="mt-20 flex flex-col items-start">
 
                 {yourDetails()}
 
