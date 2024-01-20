@@ -33,3 +33,18 @@ input:not(:placeholder-shown) + label {
 input::placeholder {
   font-weight: 400;
 }
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+#dropdown-pickuploc {
+  overflow-y: hidden;
+}
+
+#dropdown-pickuploc {
+  /* transform: translateY(-100%); */
+  z-index: -1;
+  display: flex;
+}
