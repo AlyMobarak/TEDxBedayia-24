@@ -1,0 +1,31 @@
+input:focus + label {
+  /* color: white !important; */
+  color: #ca7892 !important;
+  cursor: text !important;
+}
+
+input:focus {
+  cursor: text !important;
+}
+
+label,
+input {
+  transition: all ease 300ms;
+}
+
+#main-wrapper-textbox {
+  transition: border-color ease 300ms;
+  border: 2px solid transparent;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#main-wrapper-textbox:focus-within {
+  transition: all ease 300ms;
+  border: 2px solid var(--Secondary-200, #b9b3e5) !important;
+}
+
+/* There is a value inside
+input:not(:placeholder-shown) + label {
+  color: #000 !important;
+} */

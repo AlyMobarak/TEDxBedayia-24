@@ -1,6 +1,6 @@
 "use client"
 
-import { redirect, useRouter } from 'next/navigation'
+import { useRouter } from 'next/navigation'
 
 import Link from 'next/link'
 import './navigation.css'
@@ -12,7 +12,7 @@ export default function Navigation() {
 
   return (
     <center className="w-screen z-50 fixed top-0 backdrop-blur-[5px]" style={{background: "rgba(16, 13, 38, 0.10)"}}>
-      <section id="nav" className="flex flex-row max-phone:flex-col items-center justify-between max-phone:justify-center max-w-[1088px] min-w-[1088px] max-phone:max-w-[90vw] max-phone:min-w-[90vw] h-[5.5rem] max-phone:h-[6.625rem]">
+      <section id="nav" className={`flex flex-row max-phone:flex-col items-center ${pathname == "/" ? "justify-between" : "justify-start gap-32"} max-phone:justify-center max-w-[1088px] min-w-[1088px] max-phone:max-w-[90vw] max-phone:min-w-[90vw] h-[5.5rem] max-phone:h-[6.625rem]`}>
         <Link href="/" className="cursor-pointer hover:opacity-75">
           <img className="h-9 w-[28rem] max-phone:h-[1.6875rem] max-phone:w-[21rem]" src="/Nav Bar/main-logo.png" alt="Event's Logo" />
         </Link>
@@ -21,7 +21,7 @@ export default function Navigation() {
         {/* Links */}
         <div className={`nav-links flex flex-row justify-between gap-6 font-body items-center ${pathname == "/" ? "max-phone:hidden" : ""}`}>
           <Link href={pathname == "/" ? "" /**tocome after replacing await */ : (pathname == "/booking/one" ? "/booking/group" : "/booking/one")}>{pathname == "/" ? "Await" : (pathname == "/booking/one" ? "Book a Group Ticket (4)" : "Book one Ticket")}</Link>
-          {/* 15% OFF if on /booking/one */}
+          {/* 15% OFF if on /booking/one always hidden on phone */}
           <Link href="" className={(pathname != "/") ? 'hidden' : ''}>the</Link>
           <Link href="" className={(pathname != "/") ? 'hidden' : ''}>full</Link>
           <Link href="" className={(pathname != "/") ? 'hidden' : ''}>website</Link>
