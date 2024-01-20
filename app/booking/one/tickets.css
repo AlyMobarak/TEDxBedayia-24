@@ -29,3 +29,7 @@ input {
 input:not(:placeholder-shown) + label {
   color: #000 !important;
 } */
+
+input::placeholder {
+  font-weight: 400;
+}
