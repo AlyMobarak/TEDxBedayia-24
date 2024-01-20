@@ -85,7 +85,7 @@ export default function BookATicketPage() {
         <Image width="1001" height="2430" alt="" className="absolute right-0 top-0 w-[60vw] max-phone:hidden" src="/one-ticket-side.png"></Image>
         <Navigation />
 
-        <section id="book-ticket" className="mx-0 w-[100vw] max-w-[100vw] pt-[6.75rem] mb-[4.5rem] px-[11rem] max-phone:px-[2rem] text-start">
+        <section id="book-ticket" className="mx-0 w-[100vw] max-w-[100vw] pt-[6.75rem] mb-[4.5rem] px-[11rem] max-phone:width-[90vw] max-phone:max-w-[90vw] text-start">
             <h1 className="text-white font-title text-[3.5em]/[4.25rem] tracking-[-0.035rem] font-semibold text-start">Booking a Ticket<span className="text-primary">.</span></h1>
             <p className="font-body mt-4 text-text-gray-dark text-start">Note: For outsiders, one of our members will contact you regarding your ticket. <br />Due to space constraints and limits, not everyone who applies will get a ticket.<br /><br /><span className="font-bold text-text-gray-light">Date</span>: Friday, 16th February, 2024<br /><span className="font-bold text-text-gray-light">Time</span>: 4 PM to 10:30 PM<br /><span className="font-bold text-text-gray-light">Location</span>: Bedayia International School, Gate 2<br /><span className="font-bold text-text-gray-light">Individual Ticket</span>: 300 LE<br /><br /><span className="text-white">Hurry up and reserve your place now!</span></p>
 
