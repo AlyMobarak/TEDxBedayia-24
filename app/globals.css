@@ -9,6 +9,7 @@
 
 .fixed {
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .nav-links > a {
