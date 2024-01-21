@@ -54,11 +54,24 @@ select {
   display: none;
 }
 
-.options-hidden div {
+.select-items div {
+  width: 100%;
   color: #ffffff;
-  padding: 8px 16px;
-  border: 1px solid transparent;
-  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  padding-bottom: 4px;
+  border: 2px solid transparent;
+  border-color: transparent transparent rgba(185, 179, 229, 0.15) transparent;
   cursor: pointer;
   user-select: none;
+}
+
+.select-items div:hover {
+}
+
+.select-items {
+  top: calc(100% - 3.5rem);
+  padding-top: 4rem;
+}
+
+.border-none {
+  border-style: none !important;
 }
