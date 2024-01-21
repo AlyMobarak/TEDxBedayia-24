@@ -20,8 +20,8 @@ const config: Config = {
           'light': '#DFDFDF',
           'dark': '#BABABA',
         },
-        // 'textbox': '#b9b3e540',
-        'textbox': '#3a3756',
+        'textbox': '#b9b3e540',
+        // 'textbox': '#3a3756',
         'primary': {
           100: '#FFE6EE',
           200: '#E5B3C3',
