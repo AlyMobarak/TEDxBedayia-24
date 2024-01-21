@@ -8,7 +8,7 @@ import { FormEvent } from "react";
 function largeInput(name: string, required: boolean, type: string, placeholder: string, svgElement: JSX.Element) {
     return (<center>
         {/* <input type={type} name={name} id={name} className="mb-4 w-[27.75rem] h-[3.5rem] rounded-[1rem] px-3" /> */}
-        <div id="main-wrapper-textbox" className="w-[27.75rem] max-phone:w-[80vw] h-[3.5rem] rounded-[1rem] px-3 bg-textbox flex flex-row justify-between items-center">
+        <div id="main-wrapper-textbox" className="w-[27.75rem] invalid:border-error-dark max-phone:w-[80vw] h-[3.5rem] rounded-[1rem] px-3 bg-textbox flex flex-row justify-between items-center">
             <div className="relative h-[3.5rem] py-[10px] w-[24rem] cursor-pointer" onClick={() => document.getElementById(name)!!.focus()}>
                 <input type={type} name={name} id={name} required={required} placeholder="..." className="cursor-pointer bg-transparent border-transparent font-bold w-[24rem] absolute left-0 bottom-[10px]" style={{fontFamily: "Sansation, sans-serif", lineHeight: "1.5rem", fontSize: "1em"}} />
                 <label style={{fontFamily: "Sansation, sans-serif", lineHeight: "0.75rem", color: "rgba(223, 223, 223, 0.70)", fontSize: "0.75em"}} className="cursor-pointer absolute left-0 top-[10px] font-bold" htmlFor={name}>{placeholder}</label>
@@ -94,29 +94,34 @@ export default function BookATicketPage() {
                 {yourDetails()}
 
                 <section id="pickup-location" className="mt-12 w-[27.75rem] max-phone:w-[80vw]">
-                    <h2 className="font-[Sansation] text-[1.75em]/[2.5rem] font-bold max-phone:text-center">Pickup Location</h2>
-                    <div id="dropdown-pickuploc" className="relative w-[27.75rem] max-phone:w-[80vw] h-[3.5rem] rounded-[1rem] px-3 bg-textbox flex flex-row justify-between items-center" onClick={() => pickupClicked()}>
-                        <select name="" id="" style={{display: "none"}}>
+                    <h2 className="font-[Sansation] text-[1.75em]/[2.5rem] font-bold max-phone:text-center mb-5">Pickup Location</h2>
+                    <div id="dropdown-pickuploc" className="z-[99] relative w-[27.75rem] max-phone:w-[80vw] h-[3.5rem] rounded-[1rem] px-3 bg-textbox flex flex-row justify-between items-center mb-[12.75rem]" onClick={() => pickupClicked()}>
+                        <div className="relative h-[3.5rem] py-[10px] w-[24rem] cursor-pointer flex flex-col items-center" onClick={() => document.getElementById("dropdown-pickuploc")!!.click()}>
+                            <span id="selected-item-display" className="cursor-pointer bg-transparent border-transparent font-bold w-[24rem] absolute left-0 bottom-[10px]" style={{fontFamily: "Sansation, sans-serif", lineHeight: "1.5rem", fontSize: "1em"}}>None</span>
+                            <label style={{fontFamily: "Sansation, sans-serif", lineHeight: "0.75rem", color: "rgba(223, 223, 223, 0.70)", fontSize: "0.75em"}} className="cursor-pointer absolute left-0 top-[10px] font-bold">Choose your Pickup Location</label>
+                        </div>
+
+                        <select name="loc-EDIT" id="location-input" style={{display: "none"}}>
                             <option value="New+Cairo">New Cairo</option> {/* 0 */}
                             <option value="Madinaty">Madinaty</option> {/* 1 */}
                             <option value="Sherouk">Sherouk</option>
                             <option value="Masr+El+Gedeeda">Masr El Gedeeda</option>
                             <option value="Rehab">Rehab</option>
                             <option value="Nasr+City">Nasr City</option>
-                            <option value="Bedayia%E2%80%99s+High+School+Office">Bedayia's High School Office</option>
+                            <option value="Bedayia%E2%80%99s+High+School+Office">Bedayia&apos;s High School Office</option>
                         </select>
 
-                        <div className="absolute bg-textbox top-full left-0 right-0 z-50 options-hidden">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
+                        <div className="select-items absolute bg-textbox flex flex-col gap-1 font-[Sansation] pb-1 left-0 right-0 px-3 z-50 options-hiddend rounded-[1rem]">
+                            <div data-index="0">New Cairo</div>
+                            <div data-index="1">Madinaty</div>
+                            <div data-index="2">Sherouk</div>
+                            <div data-index="3">Masr El Gedeeda</div>
+                            <div data-index="4">Rehab</div>
+                            <div data-index="5">Nasr City</div>
+                            <div data-index="6" className="border-none">Bedayia&apos;s High School Office</div>
                         </div>
 
-                        <div /><div>I</div>
+                        <div /><div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M18 9L12 15L6 9" stroke="white" strokeWidth="2"/></svg></div>
                     </div>
                 </section>
 
