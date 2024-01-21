@@ -78,20 +78,6 @@ function onFormSubmission(e: FormEvent<HTMLFormElement>) {
     //! Validate. If invalid, e.preventDefault();
 }
 
-document.addEventListener("click", (element) => {
-    let dropdown = document.getElementById("location-dropdown")
-    if (!dropdown?.classList.contains("options-hidden") && (element.target as HTMLElement).parentElement?.id != "location-opener") {
-        dropdown?.classList.add("options-hidden")
-        document.getElementById("location-icon")?.classList.toggle("rotate-180")
-    }
-
-    let channel = document.getElementById("channel-dropdown");
-    if (!channel?.classList.contains("options-hidden") && (element.target as HTMLElement).parentElement?.id != "channel-opener") {
-        channel?.classList.add("options-hidden")
-        document.getElementById("channel-icon")?.classList.toggle("rotate-180")
-    }
-})
-
 function pickupClicked() {
     let dropdown = document.getElementById("location-dropdown")
     dropdown?.classList.toggle("options-hidden")
@@ -131,7 +117,7 @@ export default function BookATicketPage() {
         <Image width="1001" height="2430" alt="" className="absolute right-0 top-0 w-[60vw] max-phone:hidden" src="/one-ticket-side.png"></Image>
         <Navigation />
 
-        <section id="book-ticket" className="mx-0 w-[100vw] max-w-[100vw] pt-[6.75rem] mb-[4.5rem] px-[11rem] max-tablet:px-[6rem] max-phone:px-0 max-phone:width-[80vw] max-phone:max-w-[80vw] text-start">
+        <section id="book-ticket" className="mx-0 w-[100vw] max-w-[100vw] pt-[6.75rem] px-[11rem] max-tablet:px-[6rem] max-phone:px-0 max-phone:width-[80vw] max-phone:max-w-[80vw] text-start">
             <h1 className="text-white font-title text-[3.5em]/[4.25rem] tracking-[-0.035rem] font-semibold text-start">Booking a Ticket<span className="text-primary">.</span></h1>
             <p className="font-body mt-4 text-text-gray-dark text-start">Note: For outsiders, one of our members will contact you regarding your ticket. <br />Due to space constraints and limits, not everyone who applies will get a ticket.<br /><br /><span className="font-bold text-text-gray-light">Date</span>: Friday, 16th February, 2024<br /><span className="font-bold text-text-gray-light">Time</span>: 3 PM to 9 PM<br /><span className="font-bold text-text-gray-light">Location</span>: Bedayia International School, Gate 2<br /><span className="font-bold text-text-gray-light">Individual Ticket</span>: 300 LE<br /><br /><span className="text-white">Hurry up and reserve your place now!</span></p>
 
@@ -227,5 +213,7 @@ export default function BookATicketPage() {
                 <button type="submit" className="mt-[2.5rem] font-button text-[1.5rem]/2.25rem w-[27.75rem] max-phone:w-[80vw] h-[3.5rem] rounded-[1rem] px-3 flex flex-row justify-center items-center text-center bg-primary hover:bg-primary-600 active:bg-primary-700 transition-all" style={{fontWeight: 500, fontStyle: "normal", letterSpacing: "0.3px"}}>BOOK YOUR TICKET</button>
             </form>
         </section>
+
+        <script src="/ticket-one.js"></script>
     </center>)
 }
