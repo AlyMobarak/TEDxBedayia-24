@@ -4,6 +4,7 @@ import Navigation from "@/views/Home/Navigation Bar/navigation";
 import './tickets.css'
 import Image from "next/image";
 import { FormEvent } from "react";
+import Script from "next/script";
 
 function largeInput(name: string, required: boolean, type: string, placeholder: string, svgElement: JSX.Element) {
     return (<center>
@@ -214,6 +215,6 @@ export default function BookATicketPage() {
             </form>
         </section>
 
-        <script src="/ticket-one.js"></script>
+        <Script src="/ticket-one.js"></Script>
     </center>)
 }
