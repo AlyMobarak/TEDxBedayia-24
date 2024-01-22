@@ -11,8 +11,8 @@ function testimonial(avatar_url: string, role: string, name: string, quote: stri
             <Image width="100" height="100" src={avatar_url} className="h-full rounded-full" alt="Avatar" />
           </div>
           <div className="flex flex-col gap-0 items-start justify-start w-[27.75rem] max-phone:w-[13.875rem] text-start h-full py-1">
-            <span className="font-small"><span style={{fontWeight: 700}}>{role}</span>: {name}</span>
-            <p className="font-body">"{quote}"</p>
+            <span className="font-small max-phone:text-[0.75em]/[1.125rem]"><span style={{fontWeight: 700}}>{role}</span>: {name}</span>
+            <p className="font-body max-phone:text-[1em]/[1.5rem]">"{quote}"</p>
           </div>
   </div>)
 
