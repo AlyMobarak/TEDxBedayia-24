@@ -19,7 +19,7 @@ export default function Navigation() {
         
 
         {/* Links */}
-        <div className={`nav-links flex flex-row justify-between gap-6 font-body items-center ${pathname == "/" ? "" : "max-phone:hidden"}`}>
+        <div className={`nav-links flex flex-row justify-between gap-6 font-body items-center ${pathname == "/" ? "max-phone:hidden" : ""}`}>
           <Link href={pathname == "/" ? "" /**tocome after replacing await */ : (pathname == "/booking/one" ? "/booking/group" : "/booking/one")}>{pathname == "/" ? "Await" : (pathname == "/booking/one" ? "Book a Group Ticket (4)" : "Book one Ticket")}</Link>
           {/* 15% OFF if on /booking/one always hidden on phone */}
           <Link href="" className={(pathname != "/") ? 'hidden' : ''}>the</Link>
