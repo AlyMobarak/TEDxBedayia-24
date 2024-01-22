@@ -5,6 +5,7 @@ import '../tickets.css'
 import Image from "next/image";
 import { FormEvent } from "react";
 import Script from "next/script";
+import Link from "next/link";
 
 function largeInput(name: string, required: boolean, type: string, placeholder: string, svgElement: JSX.Element) {
     return (<center>
@@ -120,6 +121,7 @@ export default function BookATicketPage() {
 
         <section id="book-ticket" className="mx-0 w-[100vw] max-w-[100vw] pt-[6.75rem] px-[11rem] max-tablet:px-[6rem] max-phone:px-0 max-phone:width-[80vw] max-phone:max-w-[80vw] text-start">
             <h1 className="text-white font-title text-[3.5em]/[4.25rem] tracking-[-0.035rem] font-semibold text-start">Booking a Ticket<span className="text-primary">.</span></h1>
+            <span className="font-body text-white">Not what you're looking for? Click <Link href="/booking/group">here</Link> to bulk book 4 tickets at 15% discount!</span>
             <p className="font-body mt-4 text-text-gray-dark text-start">Note: For outsiders, one of our members will contact you regarding your ticket. <br />Due to space constraints and limits, not everyone who applies will get a ticket.<br /><br /><span className="font-bold text-text-gray-light">Date</span>: Friday, 16th February, 2024<br /><span className="font-bold text-text-gray-light">Time</span>: 3 PM to 9 PM<br /><span className="font-bold text-text-gray-light">Location</span>: Bedayia International School, Gate 2<br /><span className="font-bold text-text-gray-light">Individual Ticket</span>: 300 LE<br /><br /><span className="text-white">Hurry up and reserve your place now!</span></p>
 
             <form id="one-ticket-form" action="https://docs.google.com/forms/d/e/1FAIpQLSfCMc5WpErjbdEL9W9FNinF7QUy_Ad21R1P77Sl9w8oqpVOPg/formResponse" className="mt-20 flex flex-col items-start">
