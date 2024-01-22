@@ -88,3 +88,11 @@ select {
 #location-icon {
   transition-duration: 300ms !important;
 }
+
+#yes-attended.selected-yesno {
+  background-color: #00b959 !important;
+}
+
+#no-attended.selected-yesno {
+  background-color: #c70025 !important;
+}
