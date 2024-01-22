@@ -1,7 +1,7 @@
 "use client"
 
 import Navigation from "@/views/Home/Navigation Bar/navigation";
-import './tickets.css'
+import '../tickets.css'
 import Image from "next/image";
 import { FormEvent } from "react";
 import Script from "next/script";
@@ -174,8 +174,8 @@ export default function BookATicketPage() {
                         <div className="text-center p-3 flex flex-col gap-2 rounded-[1rem] w-[27.75rem] max-phone:w-[80vw] bg-textbox">
                             <span className="font-[Sansation] font-bold text-white text-[1rem]/[1.5rem]">Have you ever attended a TEDx event before?</span>
                             <div className="flex flex-row gap-[6.75rem] justify-center items-center">
-                                <div className={`font-[Sansation] cursor-pointer py-1 rounded-full text-[1rem]/[1.5rem] flex flex-row items-center justify-center px-[26px] bg-[#1F9357B2] hover:bg-[#1F9357] active:bg-[#155b37] text-white`} onClick={() => {(document.getElementById("ever-attended") as HTMLInputElement).value = "Yes"}}>Yes</div>
-                                <div className={`font-[Sansation] cursor-pointer py-1 rounded-full text-[1rem]/[1.5rem] flex flex-row items-center justify-center px-[26px] bg-[#941F34B2] hover:bg-[#941F34] active:bg-[#6b1928] text-white`} onClick={() => {(document.getElementById("ever-attended") as HTMLInputElement).value = "No"}}>No</div>
+                                <div id="yes-attended" className={`font-[Sansation] cursor-pointer py-1 rounded-full text-[1rem]/[1.5rem] flex flex-row items-center justify-center px-[26px] bg-[#1F9357B2] hover:bg-[#1F9357] active:bg-[#155b37] text-white`} onClick={() => {(document.getElementById("ever-attended") as HTMLInputElement).value = "Yes"; document.getElementById("yes-attended")?.classList.add("selected-yesno"); document.getElementById("no-attended")?.classList.remove("selected-yesno")}}>Yes</div>
+                                <div id="no-attended" className={`font-[Sansation] cursor-pointer py-1 rounded-full text-[1rem]/[1.5rem] flex flex-row items-center justify-center px-[26px] bg-[#941F34B2] hover:bg-[#941F34] active:bg-[#6b1928] text-white`} onClick={() => {(document.getElementById("ever-attended") as HTMLInputElement).value = "No"; document.getElementById("no-attended")?.classList.add("selected-yesno"); document.getElementById("yes-attended")?.classList.remove("selected-yesno")}}>No</div>
                             </div>
                         </div>
 
