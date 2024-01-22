@@ -41,7 +41,7 @@ export default function HeroSection() {
     <center style={{overflowX: "hidden", maxWidth: "100vw"}}>
       {blurredCircles()}
       {/* 1200px Nav Bar needs to be condensed a bit and font further lowered. 1350px font lowers and nav bar stays same. */}
-      <section id="hero" className="mx-0 w-[100%] max-w-[100vw] pt-[6.75rem] max-tablet:pt-[5rem] mb-[4.5rem] relative max-phone:bg-[length:80vh_100px]" style={{background: "url(\"/Hero Section/hero-image.png\") no-repeat top center", backgroundSize: "100%"}}>
+      <section id="hero" className="mx-0 w-[100%] max-w-[100vw] pt-[6.75rem] max-phone:pt-[10rem] max-tablet:pt-[5rem] mb-[4.5rem] relative max-phone:bg-[length:80vh_100px]" style={{background: "url(\"/Hero Section/hero-image.png\") no-repeat top center", backgroundSize: "100%"}}>
         <div>
           <motion.div
             initial={{ y: 40 }}
