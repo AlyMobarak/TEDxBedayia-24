@@ -1,9 +1,9 @@
 "use client"
 
+import { motion } from "framer-motion"
+import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 import './hero.css'
-import Image from 'next/image'
-import { motion } from "framer-motion"
 
 function testimonial(avatar_url: string, role: string, name: string, quote: string, alt: boolean) {
   if (alt) return (<div className="w-[38.5rem] h-[6.75rem] max-phone:min-w-[28.875rem] max-phone:h-[5.0625rem] px-10 max-phone:px-[1.875rem] py-4 max-phone:py-3 bg-secondary-400 rounded-[1rem] max-phone:rounded-[0.75rem] flex flex-row gap-4 max-phone:gap-3 justify-start items-center" style={{backgroundImage: "url(\"/Hero Section/Vector Art Testimonial.png\")", backgroundSize: "100% 100%", backgroundRepeat: "no-repeat"}}>
@@ -12,7 +12,7 @@ function testimonial(avatar_url: string, role: string, name: string, quote: stri
           </div>
           <div className="flex flex-col gap-0 items-start justify-start w-[27.75rem] max-phone:w-[13.875rem] text-start h-full py-1">
             <span className="font-small max-phone:text-[0.75em]/[1.125rem]"><span style={{fontWeight: 700}}>{role}</span>: {name}</span>
-            <p className="font-body max-phone:text-[1em]/[1.5rem]">"{quote}"</p>
+            <p className="font-body max-phone:text-[1em]/[1.5rem]">&quot;{quote}&quot;</p>
           </div>
   </div>)
 
@@ -22,7 +22,7 @@ function testimonial(avatar_url: string, role: string, name: string, quote: stri
             </div>
             <div className="flex flex-col gap-0 items-start justify-start w-[27.75rem] max-phone:w-[13.875rem] text-start h-full py-1">
               <span className="font-small"><span style={{fontWeight: 700}}>{role}</span>: {name}</span>
-              <p className="font-body">"{quote}"</p>
+              <p className="font-body">&quot;{quote}&quot;</p>
             </div>
   </div>)
 }
@@ -88,7 +88,6 @@ export default function HeroSection() {
         {testimonial("/Avatars/dad.png", "Parent", "Someone's Dad", "Last year was more than talks: a transformative journey into knowledge and creativity. Well done!", false)}
       </section>
 
-      <div className='mt-20 w-[33.5rem] max-phone:w-[95vw] font-small temp-note text-text-gray-dark'>Send us an email at <a className='font-body text-secondary-200' href="mailto:2hysp8jw62@privaterelay.appleid.com">2hysp8jw62@privaterelay.appleid.com</a> if you find any bugs visually or programatically.</div>
     </center>
   )
 }

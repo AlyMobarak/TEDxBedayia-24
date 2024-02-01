@@ -2,9 +2,10 @@
 
 import { useRouter } from 'next/navigation'
 
+import Image from 'next/image'
 import Link from 'next/link'
-import './navigation.css'
 import { usePathname } from 'next/navigation'
+import './navigation.css'
 
 export default function Navigation() {
   const pathname = usePathname();
@@ -14,7 +15,7 @@ export default function Navigation() {
     <center className="w-[100%] z-[9999999] fixed top-0 backdrop-blur-[5px]" style={{background: "rgba(16, 13, 38, 0.10)"}}>
       <section id="nav" className={`flex flex-row max-phone:flex-col items-center ${pathname == "/" ? "justify-between" : "justify-start gap-32"} max-phone:justify-center px-[11rem] max-tablet:px-[6rem] max-phone:px-0 max-phone:py-3 max-phone:w-[80vw] max-phone:max-w-[80vw] max-phone:min-w-[80vw] h-[5.5rem] max-phone:h-[6.625rem]`}>
         <Link href="/" className="cursor-pointer hover:opacity-75">
-          <img className="h-9 w-[28rem] max-phone:h-[1.6875rem] max-phone:w-[21rem]" src="/Nav Bar/main-logo.png" alt="Event's Logo" />
+          <Image width="448" height="36" className="h-9 w-[28rem] max-phone:h-[1.6875rem] max-phone:w-[21rem]" src="/Nav Bar/main-logo.png" alt="Event's Logo" />
         </Link>
         
 
