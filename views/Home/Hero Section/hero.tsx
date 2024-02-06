@@ -1,9 +1,9 @@
 "use client"
 
+import { motion } from "framer-motion"
+import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 import './hero.css'
-import Image from 'next/image'
-import { motion } from "framer-motion"
 
 function testimonial(avatar_url: string, role: string, name: string, quote: string, alt: boolean) {
   if (alt) return (<div className="w-[38.5rem] h-[6.75rem] max-phone:min-w-[28.875rem] max-phone:h-[5.0625rem] px-10 max-phone:px-[1.875rem] py-4 max-phone:py-3 bg-secondary-400 rounded-[1rem] max-phone:rounded-[0.75rem] flex flex-row gap-4 max-phone:gap-3 justify-start items-center" style={{backgroundImage: "url(\"/Hero Section/Vector Art Testimonial.png\")", backgroundSize: "100% 100%", backgroundRepeat: "no-repeat"}}>
@@ -12,7 +12,7 @@ function testimonial(avatar_url: string, role: string, name: string, quote: stri
           </div>
           <div className="flex flex-col gap-0 items-start justify-start w-[27.75rem] max-phone:w-[13.875rem] text-start h-full py-1">
             <span className="font-small max-phone:text-[0.75em]/[1.125rem]"><span style={{fontWeight: 700}}>{role}</span>: {name}</span>
-            <p className="font-body max-phone:text-[1em]/[1.5rem]">"{quote}"</p>
+            <p className="font-body max-phone:text-[1em]/[1.5rem]">&quot;{quote}&quot;</p>
           </div>
   </div>)
 
@@ -22,15 +22,15 @@ function testimonial(avatar_url: string, role: string, name: string, quote: stri
             </div>
             <div className="flex flex-col gap-0 items-start justify-start w-[27.75rem] max-phone:w-[13.875rem] text-start h-full py-1">
               <span className="font-small"><span style={{fontWeight: 700}}>{role}</span>: {name}</span>
-              <p className="font-body">"{quote}"</p>
+              <p className="font-body">&quot;{quote}&quot;</p>
             </div>
   </div>)
 }
 
 function blurredCircles() {
-  return (<div className='overflow-hidden min-h-0 max-phone:hidden max-tablet:hidden'>
+  return (<div className='overflow-hidden width-screen max-w-full min-h-0 max-phone:hidden max-tablet:hidden'>
     <div className="w-[22rem] h-[22rem] max-phone:w-[10.5rem] max-phone:hidden max-tablet:hidden max-phone:h-[10.5rem] flex-shrink-0 rounded-full bg-[#8F837C] blur-[200px] absolute left-[-11rem] top-[25rem] max-phone:left-[-5.25rem]" />
-    <div className="w-[22rem] h-[22rem] max-phone:w-[10.5rem] max-phone:hidden max-tablet:hidden max-phone:h-[10.5rem] flex-shrink-0 rounded-full bg-[#8F837C] blur-[200px] absolute right-[-11rem] max-phone:right-[-5.25rem] top-[25rem]" />
+    <div className="w-[22rem] h-[22rem] hidden max-phone:w-[10.5rem] max-phone:hidden max-tablet:hidden max-phone:h-[10.5rem] flex-shrink-0 rounded-full bg-[#8F837C] blur-[200px] absolute right-[-11rem] max-phone:right-[-5.25rem] top-[25rem]" />
   </div>)
 }
 
@@ -38,7 +38,7 @@ export default function HeroSection() {
   const router = useRouter();
 
   return (
-    <center style={{overflowX: "hidden", maxWidth: "100vw"}}>
+    <center style={{overflow: "hidden", maxWidth: "100vw"}}>
       {blurredCircles()}
       {/* 1200px Nav Bar needs to be condensed a bit and font further lowered. 1350px font lowers and nav bar stays same. */}
       <section id="hero" className="mx-0 w-[100%] max-w-[100vw] pt-[6.75rem] max-phone:pt-[10rem] max-tablet:pt-[5rem] mb-[4.5rem] relative max-phone:bg-[length:80vh_100px]" style={{background: "url(\"/Hero Section/hero-image.png\") no-repeat top center", backgroundSize: "100%"}}>
@@ -75,7 +75,7 @@ export default function HeroSection() {
 
           <p className="mt-2 text-center text-text-gray-dark font-body">Await the Wonders!</p>
 
-          <h4 className="mt-[7rem] min-[1520px]:mt-[9rem] min-[1600px]:mt-[12rem] min-[1720px]:mt-[15rem] min-[1850px]:mt-[18rem] font-title text-center max-w-[90vw]">Speakers, <br />Activities, and More Coming Out Soon!! Await us!</h4>
+          <h4 className="mt-[7rem] min-[1520px]:mt-[9rem] min-[1600px]:mt-[12rem] min-[1720px]:mt-[15rem] min-[1850px]:mt-[18rem] text-center max-w-[90vw]" style={{fontFamily: "Poppins"}}>Speakers, <br />Activities, and More Coming Out Soon!! Await us!</h4>
         </div>
       </section>
       
@@ -87,8 +87,6 @@ export default function HeroSection() {
         {testimonial("/Avatars/mom.png", "Student", "Zeina", "The vendors offered a selection of hot delicious meals which tasted amazing. I hope TEDx this year will be as fun.", true)}
         {testimonial("/Avatars/dad.png", "Parent", "Someone's Dad", "Last year was more than talks: a transformative journey into knowledge and creativity. Well done!", false)}
       </section>
-
-      <div className='mt-20 w-[33.5rem] max-phone:w-[95vw] font-small temp-note text-text-gray-dark'>Send us an email at <a className='font-body text-secondary-200' href="mailto:2hysp8jw62@privaterelay.appleid.com">2hysp8jw62@privaterelay.appleid.com</a> if you find any bugs visually or programatically.</div>
     </center>
   )
 }
