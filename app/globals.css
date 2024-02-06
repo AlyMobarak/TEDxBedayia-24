@@ -91,6 +91,7 @@
   font-style: normal;
 }
 
+
 .font-title {
   text-align: center;
   font-size: 4em;
@@ -133,7 +134,7 @@ h4 {
     font-size: 3em;
     line-height: 4rem;
   }
-
+  
   .font-special {
     font-size: 0.9375em;
     line-height: 0.9375rem;

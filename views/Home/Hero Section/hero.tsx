@@ -87,7 +87,6 @@ export default function HeroSection() {
         {testimonial("/Avatars/mom.png", "Student", "Zeina", "The vendors offered a selection of hot delicious meals which tasted amazing. I hope TEDx this year will be as fun.", true)}
         {testimonial("/Avatars/dad.png", "Parent", "Someone's Dad", "Last year was more than talks: a transformative journey into knowledge and creativity. Well done!", false)}
       </section>
-
     </center>
   )
 }
