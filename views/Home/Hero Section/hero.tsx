@@ -28,9 +28,9 @@ function testimonial(avatar_url: string, role: string, name: string, quote: stri
 }
 
 function blurredCircles() {
-  return (<div className='overflow-hidden min-h-0 max-phone:hidden max-tablet:hidden'>
+  return (<div className='overflow-hidden width-screen max-w-full min-h-0 max-phone:hidden max-tablet:hidden'>
     <div className="w-[22rem] h-[22rem] max-phone:w-[10.5rem] max-phone:hidden max-tablet:hidden max-phone:h-[10.5rem] flex-shrink-0 rounded-full bg-[#8F837C] blur-[200px] absolute left-[-11rem] top-[25rem] max-phone:left-[-5.25rem]" />
-    <div className="w-[22rem] h-[22rem] max-phone:w-[10.5rem] max-phone:hidden max-tablet:hidden max-phone:h-[10.5rem] flex-shrink-0 rounded-full bg-[#8F837C] blur-[200px] absolute right-[-11rem] max-phone:right-[-5.25rem] top-[25rem]" />
+    <div className="w-[22rem] h-[22rem] hidden max-phone:w-[10.5rem] max-phone:hidden max-tablet:hidden max-phone:h-[10.5rem] flex-shrink-0 rounded-full bg-[#8F837C] blur-[200px] absolute right-[-11rem] max-phone:right-[-5.25rem] top-[25rem]" />
   </div>)
 }
 
@@ -38,7 +38,7 @@ export default function HeroSection() {
   const router = useRouter();
 
   return (
-    <center style={{overflowX: "hidden", maxWidth: "100vw"}}>
+    <center style={{overflow: "hidden", maxWidth: "100vw"}}>
       {blurredCircles()}
       {/* 1200px Nav Bar needs to be condensed a bit and font further lowered. 1350px font lowers and nav bar stays same. */}
       <section id="hero" className="mx-0 w-[100%] max-w-[100vw] pt-[6.75rem] max-phone:pt-[10rem] max-tablet:pt-[5rem] mb-[4.5rem] relative max-phone:bg-[length:80vh_100px]" style={{background: "url(\"/Hero Section/hero-image.png\") no-repeat top center", backgroundSize: "100%"}}>

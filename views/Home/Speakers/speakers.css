@@ -57,6 +57,10 @@ body {
   flex-direction: column;
 }
 
+.speakerCards:hover {
+  cursor: pointer;
+}
+
 .card-content {
   padding: 8px;
   padding-top: 18px;
