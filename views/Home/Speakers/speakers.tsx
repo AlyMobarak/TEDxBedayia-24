@@ -26,7 +26,7 @@ function speakerCard(name: string, title: string, description: string, bigdesc: 
 
                 <div className="flip-card-back">
                     <div className="instaDate-container">
-                        <div className="insta font-body">{insta}</div>
+                        <a href={`https://www.instagram.com/${insta}/`} className="insta font-body cursor-pointer">@{insta}</a>
                         <div className="date font-body">16/2/2023, xx:xx PM</div>
                     </div>
                     <div className="text-container font-body" style={{lineHeight: "1.25rem"}}>
@@ -55,14 +55,14 @@ export default function Speakers() {
         <div id="speakers-title" className='font-title max-phone:margin-negative-top max-phone:mt-[-5rem]'>Speakers</div>
         <div id="speakers-container" className='max-phone:flex-col w-screen max-phone:gap-0 max-phone:p-0 max-phone:m-0'>
             <div id="speakers-container1" className='max-phone:p-0 max-phone:m-0 max-phone:flex-col'>
-                { speakerCard("Ibrahim Abdelfatah", "The Science of Sleep", "Discover the science of the perfect nap with Ibrahim Abdelfattah at TEDx'24! Uncover the latest evidence-based sleep strategies for peak rejuvenation.", "Has the perfect nap been lying in wait for science to unveil its mysteries? Ibrahim Abdelfattah, our first speaker, will crack the science of perfect naps at this year's TEDx. Join us at TEDx'24 & discover evidence-based sleep science secrets!", "/speakers/ibrahim-abdelfatah.png", "@bima.abf") }
+                { speakerCard("Ibrahim Abdelfatah", "The Science of Sleep", "Discover the science of the perfect nap with Ibrahim Abdelfattah at TEDx'24! Uncover the latest evidence-based sleep strategies for peak rejuvenation.", "Has the perfect nap been lying in wait for science to unveil its mysteries? Ibrahim Abdelfattah, our first speaker, will crack the science of perfect naps at this year's TEDx. Join us at TEDx'24 & discover evidence-based sleep science secrets!", "/speakers/ibrahim-abdelfatah.png", "bima.abf") }
                 { chainedCard() }
                 { chainedCard() }
                 { chainedCard() }
                 { chainedCard() }
             </div>
             <div id="speakers-container2" className='max-phone:p-0 max-phone:flex-col'>
-                { chainedCard() }
+                { speakerCard("Salman Fakhry", "Pschology behind Addictions", "Get ready to laugh and learn as he unpacks the science behind our minds with captivating stories. Don't miss out on this blend of insight and fun!", "Prepare to deeply delve into human psychology with Salman Fakhry, a tenth grader whose wit is as sharp as his cognizance. In a speech that plights to both stimulate your intellect & make you laugh, Salman will digest the fascinating science of psychology, one hilarious anecdote at a time. Don't miss his speech at TEDx'24!", "/speakers/salman-fakhry.png", "N/A") }
                 { chainedCard() }
                 { chainedCard() }
                 { chainedCard() }
