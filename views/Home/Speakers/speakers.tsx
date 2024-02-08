@@ -56,7 +56,7 @@ export default function Speakers() {
         <div id="speakers-container" className='max-phone:flex-col w-screen max-phone:gap-0 max-phone:p-0 max-phone:m-0'>
             <div id="speakers-container1" className='max-phone:p-0 max-phone:m-0 max-phone:flex-col'>
                 { speakerCard("Ibrahim Abdelfatah", "The Science of Sleep", "Discover the science of the perfect nap with Ibrahim Abdelfattah at TEDx'24! Uncover the latest evidence-based sleep strategies for peak rejuvenation.", "Has the perfect nap been lying in wait for science to unveil its mysteries? Ibrahim Abdelfattah, our first speaker, will crack the science of perfect naps at this year's TEDx. Join us at TEDx'24 & discover evidence-based sleep science secrets!", "/speakers/ibrahim-abdelfatah.png", "bima.abf") }
-                { chainedCard() }
+                { speakerCard("Seif Aly", "Power of Multi-Talent", "Delve into his life as a passionate filmmaker and watch as he reveals how animated marvels are born from the fusion of media. Anticipate a journey that promises to dazzle your senses!", "Seif Aly, a multi-talented kaleidoscope of creativity, will share his journey as a passionate filmmaker on the TEDx stage. Seif will help you travel into the compelling world of animation; a world where bright landscapes emerge from the blurred boundaries of other media! Await his speech at TEDx 2024!!", "/speakers/seif-aly.png", "seifali.1") }
                 { chainedCard() }
                 { chainedCard() }
                 { chainedCard() }
