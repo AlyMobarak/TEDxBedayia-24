@@ -75,7 +75,7 @@ export default function HeroSection() {
 
           <p className="mt-2 text-center text-text-gray-dark font-body">Await the Wonders!</p>
 
-          <h4 className="mt-[7rem] min-[1520px]:mt-[9rem] min-[1600px]:mt-[12rem] min-[1720px]:mt-[15rem] min-[1850px]:mt-[18rem] text-center max-w-[90vw]" style={{fontFamily: "Poppins"}}>Speakers, <br />Activities, and More Coming Out Soon!! Await us!</h4>
+          <h4 className="mt-[7rem] min-[1520px]:mt-[9rem] min-[1600px]:mt-[12rem] min-[1720px]:mt-[15rem] min-[1850px]:mt-[18rem] text-center max-w-[90vw]" style={{fontFamily: "Poppins"}}>Speakers<br />are out! More Coming Out Soon!! Await us!</h4>
         </div>
       </section>
       

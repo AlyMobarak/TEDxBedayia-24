@@ -53,7 +53,7 @@ function chainedCard() {
 export default function Speakers() {
     return (<section id="speakers" className="mx-0 w-[100%] max-w-[100vw] mt-[-6.75rem] max-phone:pt-[10rem] max-tablet:pt-[5rem] mb-[4.5rem]">
         <div id="speakers-title" className='font-title max-phone:margin-negative-top max-phone:mt-[-5rem]'>Speakers</div>
-        <div className='flex flex-row justify-center items-center'><span className="text-center w-screen text-text-gray-dark font-small font-semibold max-phone:hidden">Hover me to view more information!</span></div>
+        <div className='flex flex-row justify-center items-center'><span className="text-center w-screen text-text-gray-dark font-small font-semibold max-phone:hidden">Hover over me to view more information!</span></div>
         <div id="speakers-container" className='max-phone:flex-col w-screen max-phone:gap-0 max-phone:p-0 max-phone:m-0'>
             <div id="speakers-container1" className='max-phone:p-0 max-phone:m-0 max-phone:flex-col'>
                 { speakerCard("Ibrahim Abdelfatah", "The Science of Sleep", "Discover the science of the perfect nap with Ibrahim Abdelfattah at TEDx'24! Uncover the latest evidence-based sleep strategies for peak rejuvenation.", "Has the perfect nap been lying in wait for science to unveil its mysteries? Ibrahim Abdelfattah, our first speaker, will crack the science of perfect naps at this year's TEDx. Join us at TEDx'24 & discover evidence-based sleep science secrets!", "/speakers/ibrahim-abdelfatah.png", "bima.abf") }
