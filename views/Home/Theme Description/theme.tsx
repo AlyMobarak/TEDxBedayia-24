@@ -3,7 +3,7 @@ import Image from 'next/image';
 import './theme.css';
 
 export default function Theme() {
-    return (<section id="speakers" className="mx-0 w-[100%] max-w-[100vw] mt-16 mb-[4.5rem] relative">
+    return (<section id="theme" className="mx-0 w-[100%] max-w-[100vw] mt-16 mb-[4.5rem] relative">
         <Image src="/theme-star.png" alt="" width="120" height="120" className='absolute top-4 left-[16rem] max-phone:hidden'></Image>
         <Image src="/theme-moon.png" alt="" width="129" height="120" className='absolute top-[20rem] right-[22rem] rotate-12 max-phone:hidden'></Image>
         <div>
