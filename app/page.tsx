@@ -1,6 +1,7 @@
 import HeroSection from '@/views/Home/Hero Section/hero'
 import Navigation from '@/views/Home/Navigation Bar/navigation'
 import Speakers from '@/views/Home/Speakers/speakers'
+import Theme from '@/views/Home/Theme Description/theme'
 import Image from "next/image"
 
 export default function Home() {
@@ -9,6 +10,8 @@ export default function Home() {
       <Navigation />
       
       <HeroSection />
+
+      <Theme />
 
       <Image style={{width: "100vw"}} className='mt-16' width="2880" alt="" height="702" src="/confedential.png"></Image>
 
