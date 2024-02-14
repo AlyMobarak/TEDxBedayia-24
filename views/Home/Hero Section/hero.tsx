@@ -66,9 +66,9 @@ export default function HeroSection() {
               animate={{ rotate: 0 }}
               transition={{ ease: 'easeInOut', duration: 0.75 }}
             >
-              <div className="relative hover:-translate-y-2 max-phone:hover:-translate-y-1 secondary-wrapper">
-                <div className="rounded-full bg-secondary-400 flex items-center justify-center px-4 py-[0.375rem] absolute top-0 right-0 z-10 max-phone:hidden"><span className='font-special'>15% OFF!</span></div>
-                <button className="py-5 max-phone:py-[0.9375rem] justify-center text-center items-center shrink-0 w-[16.25rem] max-phone:w-[16rem] font-button rounded-2xl bg-transparent border-4 max-phone:border-3 border-solid border-secondary-400 left-0 bottom-0 absolute" onClick={() => router.push('/booking/group')}>Book a Group Ticket</button>
+              <div className="relative secondary-wrapper">
+                <div className="rounded-full opacity-50 bg-secondary-400 flex items-center justify-center px-4 py-[0.375rem] absolute top-0 right-0 z-10 max-phone:hidden"><span className='font-special'>15% OFF!</span></div>
+                <button className="py-5 max-phone:py-[0.9375rem] justify-center text-center items-center shrink-0 w-[16.25rem] max-phone:w-[16rem] font-button rounded-2xl bg-transparent border-4 max-phone:border-3 border-solid border-secondary-400 left-0 bottom-0 absolute disabled:opacity-50" disabled onClick={() => router.push('/booking/group')}>Book a Group Ticket</button>
               </div>
             </motion.div>
           </div>

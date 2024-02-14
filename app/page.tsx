@@ -16,7 +16,7 @@ export default function Home() {
       <Image style={{width: "100vw"}} className='mt-16' width="2880" alt="" height="702" src="/confedential.png"></Image>
 
       <div className='relative'>
-        <Image src="/speakers-elements.png" alt="" className='absolute z-10 left-[7.5%] pointer-events-none top-[8.5%] h-[1250px] max-tablet:hidden' width={1280} height={1400}></Image>
+        <Image src="/speakers-elements.png" alt="" className='absolute z-10 pointer-events-none top-[8.5%] h-[1250px] max-tablet:hidden' style={{left: "calc(100vw - 1468px)"}} width={1280} height={1400}></Image>
         <Speakers />
       </div>
 

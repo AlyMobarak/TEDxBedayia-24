@@ -1,11 +1,11 @@
 "use client"
 
 import Navigation from "@/views/Home/Navigation Bar/navigation";
-import '../tickets.css'
 import Image from "next/image";
-import { FormEvent } from "react";
-import Script from "next/script";
 import Link from "next/link";
+import Script from "next/script";
+import { FormEvent } from "react";
+import '../tickets.css';
 
 function largeInput(name: string, required: boolean, type: string, placeholder: string, svgElement: JSX.Element) {
     return (<center>
@@ -48,11 +48,9 @@ function yourDetails() {
                 {smallInput("last-name", true, "text", "Last Name", <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M19 11V8.2C19 7.0799 19 6.51984 18.782 6.09202C18.5903 5.71569 18.2843 5.40973 17.908 5.21799C17.4802 5 16.9201 5 15.8 5H7.2C6.0799 5 5.51984 5 5.09202 5.21799C4.71569 5.40973 4.40973 5.71569 4.21799 6.09202C4 6.51984 4 7.07989 4 8.2V13.8C4 14.9201 4 15.4802 4.21799 15.908C4.40973 16.2843 4.71569 16.5903 5.09202 16.782C5.51984 17 6.07989 17 7.2 17H14" stroke="white" strokeWidth="2" strokeLinecap="round"/><path d="M8 13H12" stroke="white" strokeWidth="2" strokeLinecap="round"/><path d="M8 9H15" stroke="white" strokeWidth="2" strokeLinecap="round"/><circle cx="18" cy="15" r="1" stroke="white" strokeWidth="2"/><path d="M20 20C20 20 19.5 19 18 19C16.5 19 16 20 16 20" stroke="white" strokeWidth="2" strokeLinecap="round"/></svg>)}
             </div> */}
 
-            {largeInput("entry.418098451", true, "text", "Full Name", <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M19 11V8.2C19 7.0799 19 6.51984 18.782 6.09202C18.5903 5.71569 18.2843 5.40973 17.908 5.21799C17.4802 5 16.9201 5 15.8 5H7.2C6.0799 5 5.51984 5 5.09202 5.21799C4.71569 5.40973 4.40973 5.71569 4.21799 6.09202C4 6.51984 4 7.07989 4 8.2V13.8C4 14.9201 4 15.4802 4.21799 15.908C4.40973 16.2843 4.71569 16.5903 5.09202 16.782C5.51984 17 6.07989 17 7.2 17H14" stroke="white" strokeWidth="2" strokeLinecap="round"/><path d="M8 13H12" stroke="white" strokeWidth="2" strokeLinecap="round"/><path d="M8 9H15" stroke="white" strokeWidth="2" strokeLinecap="round"/><circle cx="18" cy="15" r="1" stroke="white" strokeWidth="2"/><path d="M20 20C20 20 19.5 19 18 19C16.5 19 16 20 16 20" stroke="white" strokeWidth="2" strokeLinecap="round"/></svg>)}
-            {smallInput("entry.59605395", true, "text", "Age", <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="9" r="3" fill="white"/><path fillRule="evenodd" clipRule="evenodd" d="M17.4514 15.9084C17.5088 16.0121 17.4793 16.1415 17.3843 16.2125C15.8828 17.3352 14.0191 18 12.0001 18C9.98102 18 8.11725 17.3351 6.61576 16.2124C6.52078 16.1414 6.49125 16.0121 6.54868 15.9083C7.49884 14.1915 9.58245 13 12 13C14.4176 13 16.5012 14.1915 17.4514 15.9084Z" fill="white"/><path d="M17 4H17.502C18.7134 4 19.319 4 19.7834 4.232C20.2095 4.44495 20.5551 4.79048 20.768 5.21665C21 5.68096 21 6.28664 21 7.498V8M17 20H17.502C18.7134 20 19.319 20 19.7834 19.768C20.2095 19.5551 20.5551 19.2095 20.768 18.7834C21 18.319 21 17.7134 21 16.502V16M7 4H6.498C5.28664 4 4.68096 4 4.21665 4.232C3.79048 4.44495 3.44495 4.79048 3.232 5.21665C3 5.68096 3 6.28664 3 7.498V8M7 20H6.498C5.28664 20 4.68096 20 4.21665 19.768C3.79048 19.5551 3.44495 19.2095 3.232 18.7834C3 18.319 3 17.7134 3 16.502V16" stroke="white" strokeWidth="2" strokeLinecap="round"/></svg>)}
-            {largeInput("entry.433155187", true, "email", "Email Address", <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path fillRule="evenodd" clipRule="evenodd" d="M3.87868 5.87868C3 6.75736 3 8.17157 3 11V13C3 15.8284 3 17.2426 3.87868 18.1213C4.75736 19 6.17157 19 9 19H15C17.8284 19 19.2426 19 20.1213 18.1213C21 17.2426 21 15.8284 21 13V11C21 8.17157 21 6.75736 20.1213 5.87868C19.2426 5 17.8284 5 15 5H9C6.17157 5 4.75736 5 3.87868 5.87868ZM6.5547 8.16795C6.09517 7.8616 5.4743 7.98577 5.16795 8.4453C4.8616 8.90483 4.98577 9.5257 5.4453 9.83205L10.8906 13.4622C11.5624 13.9101 12.4376 13.9101 13.1094 13.4622L18.5547 9.83205C19.0142 9.5257 19.1384 8.90483 18.8321 8.4453C18.5257 7.98577 17.9048 7.8616 17.4453 8.16795L12 11.7982L6.5547 8.16795Z" fill="white"/></svg>)}
-            {largeInput("entry.358129634", true, "text", "Phone Number", <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M17.7071 13.7071L20.3552 16.3552C20.7113 16.7113 20.7113 17.2887 20.3552 17.6448C18.43 19.57 15.3821 19.7866 13.204 18.153L11.6286 16.9714C9.88504 15.6638 8.33622 14.115 7.02857 12.3714L5.84701 10.796C4.21341 8.61788 4.43001 5.56999 6.35523 3.64477C6.71133 3.28867 7.28867 3.28867 7.64477 3.64477L10.2929 6.29289C10.6834 6.68342 10.6834 7.31658 10.2929 7.70711L9.27175 8.72825C9.10946 8.89054 9.06923 9.13846 9.17187 9.34373C10.3585 11.7171 12.2829 13.6415 14.6563 14.8281C14.8615 14.9308 15.1095 14.8905 15.2717 14.7283L16.2929 13.7071C16.6834 13.3166 17.3166 13.3166 17.7071 13.7071Z" stroke="white" strokeWidth="2"/></svg>)}
-            {largeInput("entry.400953681", true, "text", "School/University/Job", <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 10L12 6L20 10L12 14L4 10Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/><path d="M20 10V14" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/><path d="M7 12V17C7 17 7.45455 19 12 19C16.5455 19 17 17 17 17V12" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>)}
+            {largeInput("entry.208115114", true, "text", "Full Name", <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M19 11V8.2C19 7.0799 19 6.51984 18.782 6.09202C18.5903 5.71569 18.2843 5.40973 17.908 5.21799C17.4802 5 16.9201 5 15.8 5H7.2C6.0799 5 5.51984 5 5.09202 5.21799C4.71569 5.40973 4.40973 5.71569 4.21799 6.09202C4 6.51984 4 7.07989 4 8.2V13.8C4 14.9201 4 15.4802 4.21799 15.908C4.40973 16.2843 4.71569 16.5903 5.09202 16.782C5.51984 17 6.07989 17 7.2 17H14" stroke="white" strokeWidth="2" strokeLinecap="round"/><path d="M8 13H12" stroke="white" strokeWidth="2" strokeLinecap="round"/><path d="M8 9H15" stroke="white" strokeWidth="2" strokeLinecap="round"/><circle cx="18" cy="15" r="1" stroke="white" strokeWidth="2"/><path d="M20 20C20 20 19.5 19 18 19C16.5 19 16 20 16 20" stroke="white" strokeWidth="2" strokeLinecap="round"/></svg>)}
+            {largeInput("entry.1364191028", true, "email", "Email Address", <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path fillRule="evenodd" clipRule="evenodd" d="M3.87868 5.87868C3 6.75736 3 8.17157 3 11V13C3 15.8284 3 17.2426 3.87868 18.1213C4.75736 19 6.17157 19 9 19H15C17.8284 19 19.2426 19 20.1213 18.1213C21 17.2426 21 15.8284 21 13V11C21 8.17157 21 6.75736 20.1213 5.87868C19.2426 5 17.8284 5 15 5H9C6.17157 5 4.75736 5 3.87868 5.87868ZM6.5547 8.16795C6.09517 7.8616 5.4743 7.98577 5.16795 8.4453C4.8616 8.90483 4.98577 9.5257 5.4453 9.83205L10.8906 13.4622C11.5624 13.9101 12.4376 13.9101 13.1094 13.4622L18.5547 9.83205C19.0142 9.5257 19.1384 8.90483 18.8321 8.4453C18.5257 7.98577 17.9048 7.8616 17.4453 8.16795L12 11.7982L6.5547 8.16795Z" fill="white"/></svg>)}
+            {largeInput("entry.192153428", true, "text", "Phone Number", <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M17.7071 13.7071L20.3552 16.3552C20.7113 16.7113 20.7113 17.2887 20.3552 17.6448C18.43 19.57 15.3821 19.7866 13.204 18.153L11.6286 16.9714C9.88504 15.6638 8.33622 14.115 7.02857 12.3714L5.84701 10.796C4.21341 8.61788 4.43001 5.56999 6.35523 3.64477C6.71133 3.28867 7.28867 3.28867 7.64477 3.64477L10.2929 6.29289C10.6834 6.68342 10.6834 7.31658 10.2929 7.70711L9.27175 8.72825C9.10946 8.89054 9.06923 9.13846 9.17187 9.34373C10.3585 11.7171 12.2829 13.6415 14.6563 14.8281C14.8615 14.9308 15.1095 14.8905 15.2717 14.7283L16.2929 13.7071C16.6834 13.3166 17.3166 13.3166 17.7071 13.7071Z" stroke="white" strokeWidth="2"/></svg>)}
         </div>
     </section>)
 }
@@ -120,15 +118,15 @@ export default function BookATicketPage() {
         <Navigation />
 
         <section id="book-ticket" className="mx-0 w-[100vw] max-w-[100vw] pt-[6.75rem] px-[11rem] max-tablet:px-[6rem] max-phone:px-0 max-phone:width-[80vw] max-phone:max-w-[80vw] text-start">
-            <h1 className="text-white font-title text-[3.5em]/[4.25rem] tracking-[-0.035rem] font-semibold text-start">Booking a Ticket<span className="text-primary">.</span></h1>
-            <span className="font-body text-white">Not what you&apos;re looking for? Click <Link href="/booking/group" className="text-secondary-300">here</Link> to bulk book 4 tickets at 15% discount!</span>
-            <p className="font-body mt-4 text-text-gray-dark text-start">Note: For outsiders, one of our members will contact you regarding your ticket. <br />Due to space constraints and limits, not everyone who applies will get a ticket.<br /><br /><span className="font-bold text-text-gray-light">Date</span>: Friday, 16th February, 2024<br /><span className="font-bold text-text-gray-light hidden">Time</span><br /><span className="font-bold text-text-gray-light">Location</span>: Bedayia International School, Gate 2<br /><span className="font-bold text-text-gray-light">Individual Ticket</span>: 300 LE<br /><br /><span className="text-white">Hurry up and reserve your place now!</span></p>
+            <h1 className="text-white font-title text-[3.5em]/[4.25rem] tracking-[-0.035rem] font-semibold text-start w-max">Booking a Ticket<span className="text-primary">.</span></h1>
+            <span className="font-body text-white">We&apos;ve reached the attendee limit! To sign up for our waitlist, you can fill out the form below.</span>
+            <p className="font-body mt-4 text-text-gray-dark text-start">One of our members will contact you regarding your ticket if we find available seats.<br /><span className="font-bold text-text-gray-light">Date</span>: Friday, 16th February, 2024<br /><span className="font-bold text-text-gray-light hidden">Time</span><br /><span className="font-bold text-text-gray-light">Location</span>: Bedayia International School, Gate 2<br /><span className="font-bold text-text-gray-light">Individual Ticket</span>: 300 LE<br /><br /><span className="text-white">Hurry up and reserve your place in the waitlist now!</span></p>
 
-            <form id="one-ticket-form" action="https://docs.google.com/forms/d/e/1FAIpQLSfCMc5WpErjbdEL9W9FNinF7QUy_Ad21R1P77Sl9w8oqpVOPg/formResponse" className="mt-20 flex flex-col items-start">
+            <form id="one-ticket-form" action="https://docs.google.com/forms/d/e/1FAIpQLSc6X3KWrqzUnamdEjLHxflfVBLdapOdnr8_2-uMXW1-XAORUw/formResponse" className="mt-20 flex flex-col items-start">
 
                 {yourDetails()}
 
-                <section id="pickup-location" className="mt-12 w-[27.75rem] max-phone:w-[80vw]">
+                {/* <section id="pickup-location" className="mt-12 w-[27.75rem] max-phone:w-[80vw]">
                     <h2 className="font-[Sansation] text-[1.75em]/[2.5rem] font-bold max-phone:text-center mb-5">Pickup Location</h2>
                     <div id="dropdown-pickuploc" className="relative w-[27.75rem] max-phone:w-[80vw] h-[3.5rem] rounded-[1rem] px-3 bg-textbox flex flex-row justify-between items-center mb-[12.75rem]">
                         <div id="location-opener" className="relative z-[99] h-[3.5rem] py-[10px] w-[24rem] cursor-pointer flex flex-col items-center" onClick={() => pickupClicked()}>
@@ -137,8 +135,8 @@ export default function BookATicketPage() {
                         </div>
 
                         <select name="entry.1647470913" id="location-input" style={{display: "none"}}>
-                            <option value="New Cairo">New Cairo</option> {/* 0 */}
-                            <option value="Madinaty">Madinaty</option> {/* 1 */}
+                            <option value="New Cairo">New Cairo</option>
+                            <option value="Madinaty">Madinaty</option>
                             <option value="Sherouk">Sherouk</option>
                             <option value="Masr El Gedeeda">Masr El Gedeeda</option>
                             <option value="Rehab">Rehab</option>
@@ -158,21 +156,20 @@ export default function BookATicketPage() {
 
                         <div /><div><svg id="location-icon" className="transition-all" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M18 9L12 15L6 9" stroke="white" strokeWidth="2"/></svg></div>
                     </div>
-                </section>
+                </section> */}
 
                 <section id="almost-there" className="mt-12 w-[27.75rem] max-phone:w-[80vw]">
                     <h2 className="font-[Sansation] text-[1.75em]/[2.5rem] font-bold max-phone:text-center mb-5">Almost There!</h2>
 
                     <div id="main-wrapper-textbox" className="w-[27.75rem] invalid:border-error-dark max-phone:w-[80vw] h-[12.5rem] rounded-[1rem] px-3 bg-textbox flex flex-row justify-between items-center">
-                        <div className="relative py-[10px] h-[12.5rem] w-[26.25rem] cursor-pointer" onClick={() => document.getElementById("entry.2010272035")!!.focus()}>
-                            <textarea name="entry.2010272035" id="entry.2010272035" required placeholder="..." className="cursor-pointer bg-transparent border-transparent font-bold w-[26.25rem] absolute left-0 bottom-[10px] h-[10rem]" style={{fontFamily: "Sansation, sans-serif", lineHeight: "1.5rem", fontSize: "1em"}} />
-                            <label style={{fontFamily: "Sansation, sans-serif", lineHeight: "0.75rem", color: "rgba(223, 223, 223, 0.70)", fontSize: "0.75em"}} className="cursor-pointer absolute left-0 top-[10px] font-bold" htmlFor="entry.2010272035">What do you hope to get from TEDxYouth@BedayiaSchool this year?<span className="text-primary-400 font-bold">*</span></label>
+                        <div className="relative py-[10px] h-[12.5rem] w-[26.25rem] cursor-pointer" onClick={() => document.getElementById("entry.153984127")!!.focus()}>
+                            <textarea name="entry.153984127" id="entry.153984127" placeholder="..." className="cursor-pointer bg-transparent border-transparent font-bold w-[26.25rem] absolute left-0 bottom-[10px] h-[10rem]" style={{fontFamily: "Sansation, sans-serif", lineHeight: "1.5rem", fontSize: "1em"}} />
+                            <label style={{fontFamily: "Sansation, sans-serif", lineHeight: "0.75rem", color: "rgba(223, 223, 223, 0.70)", fontSize: "0.75em"}} className="cursor-pointer absolute left-0 top-[10px] font-bold" htmlFor="entry.153984127">Any final questions? We&apos;ll contact you if a place is free.<span className="text-primary-400 font-bold"></span></label>
                         </div>
                     </div>
 
-                    <div className="flex flex-col gap-4 mt-5">
-                        {/* Yes/No */}
-                        <input type="text" id="ever-attended" name="entry.1978466942" hidden /> {/** Ever Attended? */}
+                    {/* <div className="flex flex-col gap-4 mt-5">
+                        <input type="text" id="ever-attended" name="entry.1978466942" hidden />
                         <div className="text-center p-3 flex flex-col gap-2 rounded-[1rem] w-[27.75rem] max-phone:w-[80vw] bg-textbox">
                             <span className="font-[Sansation] font-bold text-white text-[1rem]/[1.5rem]">Have you ever attended a TEDx event before?</span>
                             <div className="flex flex-row gap-[6.75rem] justify-center items-center">
@@ -190,8 +187,8 @@ export default function BookATicketPage() {
                             </div>
 
                             <select name="entry.742151143" id="channel-input" style={{display: "none"}}>
-                                <option value="Friends">Friends</option> {/* 0 */}
-                                <option value="Family">Family</option> {/* 1 */}
+                                <option value="Friends">Friends</option>
+                                <option value="Family">Family</option>
                                 <option value="Social Media">Social Media</option>
                                 <option value="BIS in-school marketing">BIS In-School Marketing</option>
                                 <option value="TED page">TED Page</option>
@@ -209,11 +206,11 @@ export default function BookATicketPage() {
 
                             <div /><div><svg id="channel-icon" className="transition-all" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M18 9L12 15L6 9" stroke="white" strokeWidth="2"/></svg></div>
                         </div>
-                    </div>
+                    </div> */}
                 </section>
 
                 {/* Each section, width is fixed and set to 27.75rem, text align start, others all centered */}
-                <button type="submit" className="mt-[2.5rem] font-button text-[1.5rem]/2.25rem w-[27.75rem] max-phone:w-[80vw] h-[3.5rem] rounded-[1rem] px-3 flex flex-row justify-center items-center text-center bg-primary hover:bg-primary-600 active:bg-primary-700 transition-all" style={{fontWeight: 500, fontStyle: "normal", letterSpacing: "0.3px"}}>BOOK YOUR TICKET</button>
+                <button type="submit" className="mt-[2.5rem] font-button text-[1.5rem]/2.25rem w-[27.75rem] max-phone:w-[80vw] h-[3.5rem] rounded-[1rem] px-3 flex flex-row justify-center items-center text-center bg-primary hover:bg-primary-600 active:bg-primary-700 transition-all" style={{fontWeight: 500, fontStyle: "normal", letterSpacing: "0.3px"}}>ENTER THE WAITLIST</button>
             </form>
         </section>
 

@@ -21,7 +21,7 @@ export default function Navigation() {
 
         {/* Links */}
         <div className={`nav-links flex flex-row justify-between gap-6 font-body items-center max-phone:hidden`}>
-          <Link href={pathname == "/" ? "#speakers" /**tocome after replacing await */ : (pathname == "/booking/one" ? "/booking/group" : "/booking/one")}>{pathname == "/" ? "Speakers" : (pathname == "/booking/one" ? "Book a Group Ticket (4)" : "Book one Ticket")}</Link>
+          <Link href={pathname == "/" ? "#speakers" /**tocome after replacing await */ : (pathname == "/booking/one" ? "/booking/group" : "/booking/one")}>{pathname == "/" ? "Speakers" : (pathname == "/booking/one" ? "" : "Book one Ticket")}</Link>
           {/* 15% OFF if on /booking/one always hidden on phone */}
           <Link href="" className={(pathname != "/") ? 'hidden' : ''}>... Await the</Link>
           <Link href="" className={(pathname != "/") ? 'hidden' : ''}>full</Link>

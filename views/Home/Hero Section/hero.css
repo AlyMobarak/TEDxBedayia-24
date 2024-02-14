@@ -63,14 +63,6 @@
   }
 }
 
-#hero .secondary-wrapper:hover > * {
-  border-color: #32258d;
-}
-
-#hero .secondary-wrapper:hover > div {
-  background-color: #32258d;
-}
-
 #hero .secondary-wrapper > div {
   transition:
     transform ease-in 300ms,
