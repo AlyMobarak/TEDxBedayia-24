@@ -19,7 +19,7 @@ export default function Home() {
 
       <div className='relative'>
         <div className='w-screen absolute z-10 pointer-events-none max-tablet:hidden pt-[8rem]'>
-          <Image src="/speakers-elements.png" alt="" className='h-[1250px]' style={{left: "calc(100vw - 1468px)"}} width={1280} height={1400}></Image>
+          <Image src="/speakers-elements.png" alt="" className='h-[1250px] opacity-90' style={{left: "calc(100vw - 1468px)"}} width={1280} height={1400}></Image>
         </div>
         <Speakers />
       </div>
