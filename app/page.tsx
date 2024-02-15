@@ -1,4 +1,5 @@
 import HeroSection from '@/views/Home/Hero Section/hero'
+import Info from '@/views/Home/Information/info'
 import Navigation from '@/views/Home/Navigation Bar/navigation'
 import Speakers from '@/views/Home/Speakers/speakers'
 import Theme from '@/views/Home/Theme Description/theme'
@@ -13,10 +14,12 @@ export default function Home() {
 
       <Theme />
 
-      <Image style={{width: "100vw"}} className='mt-16' width="2880" alt="" height="702" src="/confedential.png"></Image>
+      <Info />
 
       <div className='relative'>
-        <Image src="/speakers-elements.png" alt="" className='absolute z-10 pointer-events-none top-[8.5%] h-[1250px] max-tablet:hidden' style={{left: "calc(100vw - 1468px)"}} width={1280} height={1400}></Image>
+        <div className='w-screen absolute z-10 pointer-events-none max-tablet:hidden pt-[8rem]'>
+          <Image src="/speakers-elements.png" alt="" className='h-[1250px]' style={{left: "calc(100vw - 1468px)"}} width={1280} height={1400}></Image>
+        </div>
         <Speakers />
       </div>
 
