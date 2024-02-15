@@ -66,10 +66,10 @@ export default function Info() {
             <div className='w-[33.5rem] max-phone:w-[85vw]'>
                 <h2 className='text-[2.5em]/[3.5rem] mb-4 font-[Ubuntu] font-[500]'>NGOs Present</h2>
                 <div className="flex flex-col gap-8">
-                    {ngoCard("Mesa7arateya", "", "")}
-                    {ngoCard("Nafa3 w Estanfa3", "", "")}
-                    {ngoCard("Mersal", "", "")}
-                    {ngoCard("Ibrahim A. Badran", "This is a medical charity foundation, focused on .", "")}
+                    {ngoCard("Mesa7arateya", "Mesa7arateya is a non-profit fundraising event held every year at Bedayia International School. They prepare Ramadan bags for those in need.", "/ngos/mesa7arateya.png")}
+                    {ngoCard("Nafa3 w Estanfa3", "Nafa3 w Estanfa3 is also a non-profit fundraising event, but they aim to provide shelter for those who can't find adequate clothes in the cold winter.", "/ngos/nafa3-estanfa3.png")}
+                    {ngoCard("Mersal", "This is a non-profit organization that serves in the health field, whcih seeks to provide all types of medical care with high quality to whoever is in need.", "/ngos/mersal.png")}
+                    {ngoCard("Ibrahim A. Badran", "It is a medical charity foundation, focused on a mission to deliver quality healthcare services to underprivileged communities in the furthest reaches of Egypt.", "/ngos/badran.png")}
                 </div>
             </div>
         </center>
