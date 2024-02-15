@@ -75,7 +75,15 @@ export default function HeroSection() {
 
           <p className="mt-2 text-center text-text-gray-dark font-body">Await the Wonders!</p>
 
-          <h4 className="mt-[7rem] min-[1520px]:mt-[9rem] min-[1600px]:mt-[12rem] min-[1720px]:mt-[15rem] min-[1850px]:mt-[18rem] text-center max-w-[90vw]" style={{fontFamily: "Poppins"}}>Speakers<br />are out! More Coming Out Soon!! Await us!</h4>
+          <h4 className="mt-[7rem] mb-3 min-[1520px]:mt-[9rem] min-[1600px]:mt-[12rem] min-[1720px]:mt-[15rem] min-[1850px]:mt-[18rem] text-center max-w-[90vw]" style={{fontFamily: "Poppins"}}>Sponsors</h4>
+          <div className="flex flex-row gap-4 justify-center w-screen">
+            <Image width="104" height="96" alt="" src="/sponsors/zoma.png" style={{height: "5.25rem", width: "auto"}}></Image>
+            <Image width="525" height="476" alt="" src="/sponsors/bbi.png" style={{height: "4.75rem", width: "auto"}}></Image>
+            <Image width="640" height="374" alt="" src="/sponsors/darya.png" style={{height: "4.75rem", width: "auto"}}></Image>
+            <Image width="377" height="164" alt="" src="/sponsors/dejavu.png" style={{height: "4.75rem", width: "auto"}}></Image>
+            <Image width="455" height="478" alt="" src="/sponsors/bosla.png" style={{height: "4.75rem", width: "auto"}}></Image>
+            <Image width="123" height="102" alt="" src="/sponsors/tlg.png" style={{height: "4.75rem", width: "auto"}}></Image>
+          </div>
         </div>
       </section>
       

@@ -1,5 +1,5 @@
 import HeroSection from '@/views/Home/Hero Section/hero'
-// import Info from '@/views/Home/Information/info'
+import Info from '@/views/Home/Information/info'
 import Navigation from '@/views/Home/Navigation Bar/navigation'
 import Speakers from '@/views/Home/Speakers/speakers'
 import Theme from '@/views/Home/Theme Description/theme'
@@ -14,7 +14,7 @@ export default function Home() {
 
       <Theme />
 
-      {/* <Info /> */}
+      <Info />
 
       <div className='relative'>
         <div className='w-screen absolute z-10 pointer-events-none max-tablet:hidden pt-[8rem]'>
