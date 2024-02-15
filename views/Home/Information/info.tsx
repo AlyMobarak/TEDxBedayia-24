@@ -32,7 +32,7 @@ function vendor(caption: string, image: any, decoration: any, top: boolean, left
 
 function ngoCard(name:string, description:string, image: string) {
     return (<div className='w-[33.5rem] flex flex-row h-[10.5rem] pl-2 py-2 gap-4 ngoCard'>
-        <Image width={150} height={150} src={image} alt="" className='max-w-[150px] max-h-[150px]'></Image>
+        <Image width={150} height={150} src={image} alt="" className='rounded-2xl max-w-[150px] max-h-[150px]'></Image>
         <div className='flex flex-col gap-1 w-[20.5rem] h-full justify-start items-start text-start'>
             <h2 className='ngoName'>{name}</h2>
             <p className='ngoDesc w-[20.5rem]'>{description}</p>
