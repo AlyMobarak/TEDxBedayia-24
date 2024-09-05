@@ -29,7 +29,7 @@ export default function Navigation() {
         </div>
 
         {/* Book a Ticket */}
-        <button className={`bg-primary active:bg-primary-700 hover:bg-primary-600 transition-all flex flex-row items-center py-2 px-6 gap-2 {max-phone:hidden} max-phone:mt-4 ${pathname != "/" ? 'hidden' : ''}`} style={{borderRadius: "0.5rem"}} onClick={() => router.push('/booking/one')}>
+        <button disabled className={`bg-primary opacity-50 active:bg-primary-700 hover:bg-primary-600 transition-all flex flex-row items-center py-2 px-6 gap-2 {max-phone:hidden} max-phone:mt-4 ${pathname != "/" ? 'hidden' : ''}`} style={{borderRadius: "0.5rem"}} onClick={() => router.push('/booking/one')}>
           <div className="w-6 h-6"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" style={{width: "100%", height: "100%"}}>
             <path d="M10 14H7" stroke="white" strokeWidth="2" strokeLinecap="round"/>
             <path d="M13 17H7" stroke="white" strokeWidth="2" strokeLinecap="round"/>

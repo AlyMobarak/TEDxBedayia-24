@@ -58,7 +58,7 @@ export default function HeroSection() {
               animate={{ rotate: 0 }}
               transition={{ ease: 'easeInOut', duration: 0.75 }}
             >
-              <button className="primary py-6 max-phone:py-[1.125rem] justify-center text-center items-center shrink-0 w-[16.25rem] max-phone:w-[16rem] font-button bg-primary rounded-2xl hover:-translate-y-2 max-phone:hover:-translate-y-1 hover:bg-primary-600 active:bg-primary-700" onClick={() => router.push('/booking/one')}>Book a Ticket</button>
+              <button disabled className="primary py-6 max-phone:py-[1.125rem] justify-center opacity-50 disabled text-center items-center shrink-0 w-[16.25rem] max-phone:w-[16rem] font-button bg-primary rounded-2xl hover:-translate-y-2 max-phone:hover:-translate-y-1 hover:bg-primary-600 active:bg-primary-700" onClick={() => router.push('/booking/one')}>Book a Ticket</button>
             </motion.div>
 
             <motion.div
