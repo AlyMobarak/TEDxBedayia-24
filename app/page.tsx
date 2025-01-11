@@ -1,9 +1,14 @@
+"use client";
 import HeroSection from "@/views/Home/Hero Section/hero";
 import Info from "@/views/Home/Information/info";
 import Navigation from "@/views/Home/Navigation Bar/navigation";
 import Theme from "@/views/Home/Theme Description/theme";
+import { useEffect } from "react";
 
 export default function Home() {
+  useEffect(() => {
+    location.href = "https://www.tedxbedayia.com";
+  });
   return (
     <center className="wrapper" style={{ scrollBehavior: "smooth" }}>
       <Navigation />
